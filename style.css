@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+body {
+    z-index: 1;
+    margin: 0;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+menu, footer {
+    z-index: 1;
+}
+/*
+.cursor-circle {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 60%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    will-change: transform;
+    transition: transform 0.1s ease-out;
+    opacity: 0;
+}
+.cursor-circle.show {
+    opacity: 1;
+}
+*/
+
+/* Navigation menu styling */
+#navigation-menu {
+    z-index: 9999;
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+    right: 0;
+    top: 0;
+    max-width: 100%;
+    padding: 0;
+    padding-left: 100%;
+    margin: 0;
+    border-bottom: 1px solid rgb(83, 83, 83);
+    background-color: none;
+    list-style: none;
+    transition: background-color 0.3s ease;
+}
+
+#navigation-menu li{
+    width: auto;
+    height: auto;
+    padding: 2vw 1.5vw;
+    margin: 0;
+}
+
+#navigation-menu li a {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+#navigation-menu li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 129, 79);
+    transition: all 0.5s ease;
+}
+
+#navigation-menu li a:hover {
+    color: rgb(255, 129, 79);
+}
+
+#navigation-menu li a:hover::after {
+    width: 100%;
+}
+
+#navigation-menu.scrolled {
+    background-color: rgba(22, 22, 22, 0.5);
+}
+
+#navigation-menu.scrolled:hover {
+    background-color: rgba(22, 22, 22, 1);
+}
+/*
+#navigation-menu.scrolled li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+#navigation-menu.scrolled li a:hover {
+    color: rgb(255, 129, 79);
+}
+*/
+
+/* Header styling */
+#header {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 60vw;
+    padding-left: 40px;
+    margin-top: 0;
+    background: linear-gradient(to right, rgba(22, 22, 22, 1) 0%, rgba(22, 22, 22, 0.5) 100%), url("profile_picture.jpg");
+    background-position: left 21%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity none;
+    transition: all 0.5s ease;
+}
+
+#header > h1 {
+    font-size: 6vw;
+    font-weight: 800;
+    margin: 0;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+}
+
+#header > h1 em {
+    background: linear-gradient(to right, rgb(34, 112, 255) 0%, rgb(220, 22, 255) 30%, rgb(255, 242, 102) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+}
+
+#header > h1 p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* General styling */
+h2 {
+    margin: 16px 0 20px 20px;
+    font-size: 4vw;
+}
+
+p, li {
+    color: rgb(22, 22, 22, 1);
+    font-size: 16px;
+    font-family: 'Inconsolata', 'Montserrat', sans-serif;
+}
+
+li {
+    margin: 10px 0;
+}
+
+#about-me ul, #projects ul, #skills ul {
+    list-style-position: inside;
+    padding-left: 0;
+    list-style-type: circle;
+}
+
+section {
+    padding: 30px 40px;
+}
+
+/* 'Intoduction' section styling */
+#introduction {
+    margin-top: 60vw;
+    background-color: rgba(22, 22, 22, 1);
+    border-top: 1px solid rgb(83, 83, 83);
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+#introduction > h2 {
+    color: rgb(255, 129, 79);
+}
+
+#introduction > p {
+    color: rgba(255, 255, 255, 1);
+}
+
+#introduction.scrolled {
+    box-shadow: 0 0 50px rgb(22, 22, 22, 1);
+}
+
+/* 'About Me' section styling */
+#about-me {
+    background-color: rgba(22, 22, 22, 1);
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+#about-me > h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+#about-me > div.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#about-me > div.content-grid div {
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(22, 22, 22, 1);
+    border: 1px solid rgb(83, 83, 83);
+    padding: 20px 30px;
+    transition: background 0.5s ease;
+}
+
+#about-me div.content-grid div h3 {
+    text-align: center;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    margin-bottom: 16px;
+    transition: color 0.5s ease;
+}
+
+#about-me div.content-grid div p, #about-me div.content-grid div ul li {
+    transition: color 0.5s ease;
+    color: none;
+}
+
+#about-me > div.content-grid div:hover {
+    cursor: default;
+}
+
+#about-me div.content-grid div:hover h3 {
+    color: rgb(255, 129, 79);
+}
+
+#about-me div.content-grid div:hover p, #about-me div.content-grid div:hover ul li {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 'Projects' section styling */
+#projects {
+    background-color: rgba(22, 22, 22, 1);
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+#projects > h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+#projects div {
+    margin: 0;
+}
+
+#projects div div.content-flex {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 40px;
+    transition: transform 0.5s ease;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#projects div div.content-flex.highlight {
+    transform: scale(1.03);
+}
+
+#projects div div.content-flex:nth-child(odd) {
+    flex-direction: row;
+}
+
+#projects div div.content-flex:nth-child(even) {
+    flex-direction: row-reverse;
+}
+/*
+#projects div div.content-flex:hover {
+    transform: scale(1.03);
+}
+*/
+#projects div div.content-flex > div {
+    background-color: rgba(22, 22, 22, 1);
+    padding: 20px 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 35vw;
+    box-sizing: border-box;
+}
+
+#projects div div.content-flex div p, #projects div div.content-flex div li, #projects div div.content-flex div em {
+    color: rgba(255, 255, 255, 1);
+}
+
+#projects div div.content-flex div h3 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+#projects div div.content-flex div h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 3vw;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+#projects div div.content-flex.highlight div h3 {
+    color: rgb(255, 129, 79);
+    text-decoration: none;
+}
+
+#projects div div.content-flex div ul {
+    margin-bottom: 0;
+}
+
+#projects div div.content-flex img {
+    width: 35vw;
+    height: 35vw;
+    flex-shrink: 0;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+#projects div div.content-flex img:hover {
+    filter: none;
+}
+
+/* 'Skills' section styling */
+#skills {
+    background-color: rgba(22, 22, 22, 1);
+    border-bottom: 1px solid rgb(83, 83, 83);
+}
+
+#skills > h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+#skills > div.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#skills > div.content-grid div {
+    background-color: rgba(22, 22, 22, 1);
+    padding: 20px 30px;
+    transition: background-color 0.5s ease;
+    border: 1px solid rgb(83, 83, 83);
+    border-radius: 10px;
+}
+
+#skills div.content-grid div h3 {
+    text-align: center;
+    font-size: 3vw;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+    margin-bottom: 16px;
+    transition: color 0.5s ease;
+}
+
+#skills div.content-grid div p, #skills div.content-grid div ul li {
+    color: rgba(22, 22, 22, 1);
+    transition: color 0.5s ease;
+}
+
+#skills div.content-grid div ul li a {
+    color: rgba(22, 22, 22, 1);
+    transition: color 0.5s ease;
+}
+
+#skills > div.content-grid div:hover {
+    background-color: rgba(22, 22, 22, 1);
+}
+
+#skills div.content-grid div:hover h3 {
+    color: rgb(255, 129, 79);
+}
+
+#skills div.content-grid div:hover p, #skills div.content-grid div:hover ul li, #skills div.content-grid div:hover ul li a {
+    color: rgba(255, 255, 255, 1);
+}
+
+#skills div.content-grid div:hover ul a:hover {
+    color: rgb(255, 129, 79);
+}
+
+/* 'Contact Me' section styling */
+#contact-me {
+    background-color: rgb(255, 129, 79);
+}
+
+.contact-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#contact-me h2, #contact-me h3, #contact-me p {
+    color: rgba(22, 22, 22, 1);
+}
+
+#contact-me h3 {
+    font-size: 3vw;
+}
+
+#contact-me a {
+    color: rgba(255, 255, 255, 1);
+}
+
+#contact-me a:hover {
+    color: rgba(22, 22, 22, 1);
+}
+/*
+#contact-me form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgb(255, 129, 79);
+    border-radius: 10px;
+    border: 1px solid rgba(22, 22, 22, 1);
+}
+*/
+
+#contact-me fieldset {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(22, 22, 22, 1);
+}
+
+#contact-me input, #contact-me textarea, #contact-me button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+#contact-me label, #contact-me input, #contact-me textarea, #contact-me em {
+    color: rgba(22, 22, 22, 1);
+    font-family: 'Inconsolata', 'Montserrat', sans-serif;
+}
+
+#contact-me legend, #contact-me button {
+    color: rgba(22, 22, 22, 1);
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+}
+
+#contact-me textarea {
+    resize: vertical;
+}
+
+#contact-me button {
+    background-color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+#contact-me button:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(22, 22, 22, 1);
+}
+
+#contact-me button:active {
+    transform: scale(1.02);
+    background-color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Footer styling */
+footer {
+    background-color: rgba(22, 22, 22, 1);
+    padding: 20px;
+    border-top: 1px solid rgb(83, 83, 83);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 1);
+    margin: 0 0 5px 0;
+}
+
+/* Responsive design styling */
+@media (max-width: 768px) {
+    #header > h1 {
+        font-size: 8vw;
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+
+    #navigation-menu {
+        position: relative;;
+        background-color: rgba(255, 255, 255, 1);
+        flex-direction: column;
+        left: 0;
+        width: auto;
+        padding-left: 0;
+    }
+
+    #navigation-menu li {
+        padding: 15px 40px;
+    }
+
+    #about-me div.content-grid div h3, #projects div div.content-flex div h3 a, #skills div.content-grid div h3 {
+        font-size: 5vw;
+    }
+
+    #about-me > div.content-grid, #skills > div.content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #projects div div.content-flex:nth-child(odd), #projects div div.content-flex:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #projects div div.content-flex img{
+        width: 100%;
+        height: auto;
+    }
+
+    #projects div div.content-flex > div {
+        height: auto;
+    }
+
+    #projects div div.content-flex div h3 {
+        text-align: center;
+    }
+
+    #contact-me h3 {
+        font-size: 5vw;
+    }
+}
