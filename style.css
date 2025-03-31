@@ -451,6 +451,7 @@ section {
 
 #skills > div.content-grid div:hover {
     background-color: rgba(22, 22, 22, 1);
+    cursor: default;
 }
 
 #skills div.content-grid div:hover h3 {

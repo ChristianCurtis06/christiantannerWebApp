@@ -42,8 +42,8 @@ const Skills: React.FC = () => {
                     onMouseLeave={handleMouseLeave}
                     style={{
                         background: interaction.isHovering && interaction.hoveredElement === "background"
-                            ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.4) 0%, rgba(22, 22, 22, 1)) 50%`
-                            : "rgba(22, 22, 22, 1)",
+                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
+                        : "rgba(22, 22, 22, 1)",
                     }}
                 >
                     <h3>Graphic Design</h3>
@@ -58,7 +58,7 @@ const Skills: React.FC = () => {
                     onMouseLeave={handleMouseLeave}
                     style={{
                         background: interaction.isHovering && interaction.hoveredElement === "education"
-                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.4) 0%, rgba(22, 22, 22, 1)) 50%`
+                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
                 >
@@ -75,7 +75,7 @@ const Skills: React.FC = () => {
                     onMouseLeave={handleMouseLeave}
                     style={{
                         background: interaction.isHovering && interaction.hoveredElement === "career"
-                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.4) 0%, rgba(22, 22, 22, 1)) 50%`
+                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
                 >
@@ -94,7 +94,7 @@ const Skills: React.FC = () => {
                     onMouseLeave={handleMouseLeave}
                     style={{
                         background: interaction.isHovering && interaction.hoveredElement === "interests"
-                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.4) 0%, rgba(22, 22, 22, 1)) 50%`
+                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
                 >
