@@ -133,7 +133,7 @@ menu, footer {
     left: 50%;
     transform: translate(-50%);
     font-size: 2rem;
-    animation: bounce 3s infinite;
+    animation: bounce 2s infinite;
     text-align: center;
 }
 
@@ -146,7 +146,7 @@ menu, footer {
         transform: translateX(-50%) translateY(0);
     }
     40% {
-        transform: translateX(-50%) translateY(-8px);
+        transform: translateX(-50%) translateY(-10px);
     }
     60% {
         transform: translateX(-50%) translateY(-8px);
@@ -197,7 +197,7 @@ menu, footer {
 }
 
 /* General styling */
-h2 {
+.section-header {
     width: fit-content;
     margin: 16px 0 20px 0;
     font-size: 4vw;
@@ -236,7 +236,7 @@ section {
     border-bottom: 1px solid rgb(83, 83, 83);
 }
 /*
-#introduction > h2 {
+#introduction #introduction-header {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -258,7 +258,7 @@ section {
     border-bottom: 1px solid rgb(83, 83, 83);
 }
 
-#about-me > h2 {
+#about-me #about-me-header {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -312,7 +312,7 @@ section {
     border-bottom: 1px solid rgb(83, 83, 83);
 }
 
-#projects > h2 {
+#projects #projects-header {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -430,7 +430,7 @@ section {
     border-bottom: 1px solid rgb(83, 83, 83);
 }
 
-#skills > h2 {
+#skills #skills-header {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -501,7 +501,7 @@ section {
     grid-template-columns: 1fr 2fr;
 }
 
-#contact-me h2, #contact-me h3, #contact-me p {
+#contact-me #contact-me-header, #contact-me h3, #contact-me p {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -523,7 +523,7 @@ section {
 }
 
 /*
-#contact-me form {
+#contact-me .contact-form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
@@ -600,11 +600,38 @@ section {
     background-color: rgba(22, 22, 22, 1);
     padding: 20px;
     border-top: 1px solid rgb(83, 83, 83);
+    position: relative;
+    overflow: hidden;
 }
 
-#footer p {
+#footer .footer-text {
+    margin-bottom: 60px;
+}
+
+#footer .footer-text p {
     color: rgba(255, 255, 255, 1);
     margin: 0 0 5px 0;
+}
+
+#footer .favicon-track {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200%;
+    height: 60px;
+    background: url("CC_Signature-white.png") repeat-x;
+    background-size: 60px auto;
+    opacity: 0.1;
+    animation: scroll-left 30s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* Responsive design styling */
@@ -613,7 +640,7 @@ section {
         font-size: 8vw;
     }
 
-    h2 {
+    .section-header {
         font-size: 6vw;
     }
 

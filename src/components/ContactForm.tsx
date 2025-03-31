@@ -21,14 +21,14 @@ const ContactForm: React.FC = () => {
         <section id="contact-me">
 
             <div className="contact-row">
-                <div className="contact-col">
-                    <h2>Contact Me</h2>
+                <div className="contact-col" id="contact-info">
+                    <h2 className="section-header" id="contact-me-header">Contact Me</h2>
                     <p>Email: <a href="mailto:hello@christiantanner.com">Hello@christiantanner.com</a></p>
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-curtis-113436326/">My Profile</a></p>
                     <p>GitHub: <a href="https://github.com/ChristianCurtis06">My GitHub</a></p>
                 </div>
 
-                <div className="contact-col">
+                <div className="contact-col" id="contact-form">
                     <form onSubmit={handleSubmit}>
                         <fieldset>
                             <legend>Get in Touch</legend>

@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
     return (
         
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 className="section-header" id="skills-header">Skills</h2>
 
             <div className="content-grid">
                 <div
