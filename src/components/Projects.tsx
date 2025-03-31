@@ -47,6 +47,11 @@ const Projects: React.FC = () => {
 
             <div>
                 <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "#"}>
+                    {/* 
+                    <div className="lbyrnth-logo-container">
+                        <img src="Laptop-model.svg" alt="LBYRNTH Logo" className="lbyrnth-logo" />
+                    </div>
+                    */}
                     <img src="LBYRNTH_Logo.png" alt="LBYRNTH Logo" />
                     <div>
                         <h3>LBYRNTH</h3>

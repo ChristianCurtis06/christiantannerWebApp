@@ -40,7 +40,7 @@ menu, footer {
     padding-left: 100%;
     margin: 0;
     border-bottom: 1px solid rgb(83, 83, 83);
-    background-color: none;
+    background-color: transparent;
     list-style: none;
     transition: background-color 0.3s ease;
 }
@@ -69,14 +69,18 @@ menu, footer {
     left: 0;
     bottom: -3px;
     width: 0;
-    height: 1px;
-    background-color: rgb(255, 129, 79);
+    height: 1.5px;
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     transition: all 0.5s ease;
 }
-
+/*
 #navigation-menu li a:hover {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+*/
 
 #navigation-menu li a:hover::after {
     width: 100%;
@@ -95,11 +99,41 @@ menu, footer {
 }
 
 #navigation-menu.scrolled li a:hover {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 */
 
 /* Header styling */
+.header-arrow {
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2rem;
+    animation: bounce 3s infinite;
+    text-align: center;
+}
+
+.header-arrow p {
+    color: rgba(255, 255, 255, 1);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-8px);
+    }
+}
+
 #header {
     z-index: -1;
     position: fixed;
@@ -112,11 +146,10 @@ menu, footer {
     height: 60vw;
     padding-left: 40px;
     margin-top: 0;
-    background: linear-gradient(to right, rgba(22, 22, 22, 1) 0%, rgba(22, 22, 22, 0.5) 100%), url("profile_picture.jpg");
+    background: linear-gradient(to right, rgba(22, 22, 22, 1) 0%, rgba(22, 22, 22, 0.6) 100%), url("profile_picture.jpg");
     background-position: left 21%;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: opacity none;
     transition: all 0.5s ease;
 }
 
@@ -129,7 +162,8 @@ menu, footer {
 }
 
 #header > h1 em {
-    background: linear-gradient(to right, rgb(34, 112, 255) 0%, rgb(220, 22, 255) 30%, rgb(255, 242, 102) 100%);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -138,13 +172,21 @@ menu, footer {
 
 #header > h1 p {
     font-weight: 300;
+    font-size: 15px;
     color: rgba(255, 255, 255, 1);
+    margin: 5px 0 0 2px;
 }
 
 /* General styling */
 h2 {
-    margin: 16px 0 20px 20px;
+    width: fit-content;
+    margin: 16px 0 20px 0;
     font-size: 4vw;
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
 }
 
 p, li {
@@ -174,10 +216,14 @@ section {
     border-top: 1px solid rgb(83, 83, 83);
     border-bottom: 1px solid rgb(83, 83, 83);
 }
-
+/*
 #introduction > h2 {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+*/
 
 #introduction > p {
     color: rgba(255, 255, 255, 1);
@@ -213,7 +259,7 @@ section {
 }
 
 #about-me div.content-grid div h3 {
-    text-align: center;
+    width: fit-content;
     font-size: 3vw;
     color: rgba(255, 255, 255, 1);
     margin: 0;
@@ -231,7 +277,10 @@ section {
 }
 
 #about-me div.content-grid div:hover h3 {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #about-me div.content-grid div:hover p, #about-me div.content-grid div:hover ul li {
@@ -289,12 +338,13 @@ section {
     height: 35vw;
     box-sizing: border-box;
 }
-
+    
 #projects div div.content-flex div p, #projects div div.content-flex div li, #projects div div.content-flex div em {
     color: rgba(255, 255, 255, 1);
 }
 
 #projects div div.content-flex div h3 {
+    width: fit-content;
     margin: 0;
     margin-bottom: 16px;
 }
@@ -307,7 +357,10 @@ section {
 }
 
 #projects div div.content-flex.highlight div h3 {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
 }
 
@@ -319,13 +372,37 @@ section {
     width: 35vw;
     height: 35vw;
     flex-shrink: 0;
-    object-fit: cover;
+    object-fit: contain;
     filter: grayscale(100%);
     transition: filter 0.5s ease;
 }
 
 #projects div div.content-flex img:hover {
     filter: none;
+}
+
+.lbyrnth-logo-container {
+    position: relative; /* Make the container the positioning context */
+    display: inline-block; /* Ensure the container wraps tightly around the image */
+}
+
+.lbyrnth-logo-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%; /* Slightly larger than the image */
+    height: 110%; /* Slightly larger than the image */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(22, 22, 22, 0) 60%);
+    border-radius: 50%; /* Make it circular */
+}
+
+.lbyrnth-logo {
+    display: block;
+    width: 35vw; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
 }
 
 /* 'Skills' section styling */
@@ -354,7 +431,7 @@ section {
 }
 
 #skills div.content-grid div h3 {
-    text-align: center;
+    width: fit-content;
     font-size: 3vw;
     color: rgba(255, 255, 255, 1);
     margin: 0;
@@ -377,7 +454,10 @@ section {
 }
 
 #skills div.content-grid div:hover h3 {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #skills div.content-grid div:hover p, #skills div.content-grid div:hover ul li, #skills div.content-grid div:hover ul li a {
@@ -385,12 +465,15 @@ section {
 }
 
 #skills div.content-grid div:hover ul a:hover {
-    color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* 'Contact Me' section styling */
 #contact-me {
-    background-color: rgb(255, 129, 79);
+    background-color: rgba(22, 22, 22, 1);
 }
 
 .contact-row {
@@ -399,26 +482,32 @@ section {
 }
 
 #contact-me h2, #contact-me h3, #contact-me p {
-    color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 #contact-me h3 {
     font-size: 3vw;
 }
 
-#contact-me a {
+#contact-me .contact-row .contact-col p {
+    margin-top: 0;
+}
+
+#contact-me .contact-row .contact-col a {
+    margin-top: 0;
     color: rgba(255, 255, 255, 1);
 }
 
 #contact-me a:hover {
-    color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
 }
+
 /*
 #contact-me form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgb(255, 129, 79);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     border-radius: 10px;
     border: 1px solid rgba(22, 22, 22, 1);
 }
@@ -427,7 +516,7 @@ section {
 #contact-me fieldset {
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(22, 22, 22, 1);
+    border: 1px solid rgba(255, 255, 255, 1);
 }
 
 #contact-me input, #contact-me textarea, #contact-me button {
@@ -439,13 +528,19 @@ section {
     box-sizing: border-box;
 }
 
+#contact-me input, #contact-me textarea {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+
 #contact-me label, #contact-me input, #contact-me textarea, #contact-me em {
-    color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
     font-family: 'Inconsolata', 'Montserrat', sans-serif;
 }
 
 #contact-me legend, #contact-me button {
-    color: rgba(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
     font-family: 'Montserrat', 'Poppins', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -457,22 +552,27 @@ section {
 }
 
 #contact-me button {
-    background-color: rgba(22, 22, 22, 1);
-    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
+    color: rgba(22, 22, 22, 1);
     cursor: pointer;
+    border-radius: 5px;
     border: none;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    transition: color 0.5s ease;
+    background-size: 200%;
+    background-position: left;
 }
 
 #contact-me button:hover {
-    background-color: rgba(255, 255, 255, 1);
-    color: rgba(22, 22, 22, 1);
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    background-position: right;
+    color: rgba(255, 255, 255, 1);
+    transition: background-position 0.5s ease;
 }
 
 #contact-me button:active {
     transform: scale(1.02);
-    background-color: rgba(22, 22, 22, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(22, 22, 22, 1);
 }
 
 /* Footer styling */

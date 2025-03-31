@@ -1,6 +1,7 @@
 import React from "react";
 import PageLayout from "./PageLayout";
 import Header from "./Header";
+import HeaderArrow from "./HeaderArrow";
 import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
@@ -12,6 +13,7 @@ const HomePage: React.FC = () => {
     return (
         <PageLayout>
             <Header />
+            <HeaderArrow />
             <main>
                 <Introduction />
                 <AboutMe />

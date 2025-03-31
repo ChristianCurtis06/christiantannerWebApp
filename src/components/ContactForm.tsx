@@ -3,7 +3,7 @@ import { useState } from "react";
 const ContactForm: React.FC = () => {
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        
+
 
         setName("");
         setEmail("");
@@ -23,7 +23,7 @@ const ContactForm: React.FC = () => {
             <div className="contact-row">
                 <div className="contact-col">
                     <h2>Contact Me</h2>
-                    <p>Email: <a href="mailto:ctcurtis10@gmail.com">Ctcurtis10@gmail.com</a></p>
+                    <p>Email: <a href="mailto:hello@christiantanner.com">Hello@christiantanner.com</a></p>
                     <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-curtis-113436326/">My Profile</a></p>
                     <p>GitHub: <a href="https://github.com/ChristianCurtis06">My GitHub</a></p>
                 </div>
