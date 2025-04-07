@@ -27,11 +27,11 @@ const Header: React.FC = () => {
 
     return (
         <header id="header">
-            <h1 style={{ opacity }}>
+            <h1 className="header-text" style={{ opacity }}>
                 <span>Hello,</span>
                 <br />
-                <em>I'm Christian!</em>
-                <p>Web Developer | Graphic Designer | SEO Specialist</p>
+                <em id="header-em">I'm Christian!</em>
+                <p id="header-bio">Web Developer | Graphic Designer | SEO Specialist</p>
             </h1>
         </header>
     );

@@ -45,12 +45,15 @@ const Skills: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Graphic Design</h3>
+                    className="content-card"
+                    id="graphic-design-skills"
+                    >
+                    <h3 className="card-header">Graphic Design</h3>
                     <ul>
                         <li>Adobe Illustrator</li>
                         <li>Adobe Photoshop</li>
-                    </ul>                </div>
+                    </ul>
+                </div>
 
                 <div
                     onMouseMove={(e) => handleMouseMove(e, "education")}
@@ -61,8 +64,10 @@ const Skills: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Video Editing</h3>
+                    className="content-card"
+                    id="video-editing-skills"
+                    >
+                    <h3 className="card-header">Video Editing</h3>
                     <ul>
                         <li>Adobe Premiere Pro</li>
                         <li>Adobe Premiere Rush</li>
@@ -78,8 +83,10 @@ const Skills: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Software Development</h3>
+                    className="content-card"
+                    id="software-development-skills"
+                    >
+                    <h3 className="card-header">Software Development</h3>
                     <ul>
                         <li>Python</li>
                         <li>JavaScript</li>
@@ -97,8 +104,10 @@ const Skills: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
+                    className="content-card"
+                    id="website-development-skills"
                 >
-                    <h3>Website Development</h3>
+                    <h3 className="card-header">Website Development</h3>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>

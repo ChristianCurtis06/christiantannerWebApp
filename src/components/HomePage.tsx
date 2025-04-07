@@ -6,7 +6,7 @@ import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import Skills from "./Skills"
-import ContactForm from "./ContactForm";
+import ContactForm from "./ContactMe";
 import Footer from "./Footer";
 
 const HomePage: React.FC = () => {

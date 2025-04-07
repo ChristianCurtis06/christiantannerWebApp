@@ -44,8 +44,10 @@ const AboutMe: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Background</h3>
+                    className="content-card"
+                    id="background-about-me"
+                    >
+                    <h3 className="card-header">Background</h3>
                     <p>I grew up in southern California but now reside in the DFW area of northern Texas. Although I am a recent High School graduate, I have worked in various fields and industries both during my high school years and since earning my diploma.</p>
                 </div>
 
@@ -58,8 +60,10 @@ const AboutMe: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Education</h3>
+                    className="content-card"
+                    id="education-about-me"
+                    >
+                    <h3 className="card-header">Education</h3>
                     <ul>
                         <li><b>High School Diploma</b>, Graduated in May 2024 from <i>Our Legacy Academy (Homeschool)</i></li>
                         <li><b>Software Engineering Bootcamp</b>, Currently enrolled in a program provided by <i>Coding Temple</i></li>
@@ -75,8 +79,10 @@ const AboutMe: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Career Goals</h3>
+                    className="content-card"
+                    id="career-goals-about-me"
+                    >
+                    <h3 className="card-header">Career Goals</h3>
                     <p>It is my goal to...</p>
                     <ul>
                         <li>...become a well-rounded designer and developer.</li>
@@ -93,8 +99,10 @@ const AboutMe: React.FC = () => {
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
-                >
-                    <h3>Personal Interests</h3>
+                    className="content-card"
+                    id="personal-interests-about-me"
+                    >
+                    <h3 className="card-header">Personal Interests</h3>
                     <ul>
                         <li>Jiu-Jitsu</li>
                         <li>Graphic Design</li>

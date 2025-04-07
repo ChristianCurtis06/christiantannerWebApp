@@ -45,16 +45,16 @@ const Projects: React.FC = () => {
         <section id="projects">
             <h2 className="section-header" id="projects-header">Projects</h2>
 
-            <div>
-                <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "#"}>
+            <div className="content-flex">
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "#"}>
                     {/* 
                     <div className="lbyrnth-logo-container">
                         <img src="Laptop-model.svg" alt="LBYRNTH Logo" className="lbyrnth-logo" />
                     </div>
                     */}
-                    <img src="LBYRNTH_Logo.png" alt="LBYRNTH Logo" />
-                    <div>
-                        <h3>LBYRNTH</h3>
+                    <img className="content-flex-img" src="LBYRNTH_Logo.png" alt="LBYRNTH Logo" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">LBYRNTH</h3>
                         <p>I developed the branding for LBYRNTH, which specializes in escape room packages for rental properties.</p>
                         <em>
                             <p>Skills Used:</p>
@@ -65,10 +65,10 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "https://allaboutbaja.net/"}>
-                    <img src="AllAboutBaja_square.png" alt="AllAboutBaja Logo" />
-                    <div>
-                        <h3>AllAboutBaja.net</h3>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://allaboutbaja.net/"}>
+                    <img className="content-flex-img" src="AllAboutBaja_square.png" alt="AllAboutBaja Logo" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">AllAboutBaja.net</h3>
                         <p>I designed the logo and associated graphics for the AllAboutBaja.net travel website.</p>
                         <em>
                             <p>Skills Used:</p>
@@ -79,10 +79,10 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "https://www.buysellammo.com/"}>
-                    <img src="BSA_square.png" alt="BuySellAmmo Logo" />
-                    <div>
-                        <h3>BuySellAmmo.com</h3>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://www.buysellammo.com/"}>
+                    <img className="content-flex-img" src="BSA_square.png" alt="BuySellAmmo Logo" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">BuySellAmmo.com</h3>
                         <p>I headed the rebranding of the ammunition resell website BuySellAmmo.com and created their advertisement graphics.</p>
                         <em>
                             <p>Skills Used:</p>
@@ -93,10 +93,10 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
                 
-                <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "https://www.youtube.com/@EPXG"}>
-                    <img src="EPXG_favicon.png" alt="EPXG Favicon" />
-                    <div>
-                        <h3>EPXG Channel</h3>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://www.youtube.com/@EPXG"}>
+                    <img className="content-flex-img" src="EPXG_favicon.png" alt="EPXG Favicon" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">EPXG Channel</h3>
                         <p>I started and managed the gaming channel Everything Pixel Gaming (EPXG). This included creating content, editing footage, designing thumbnails, and publishing final videos.</p>
                         <em>
                             <p>Skills Used:</p>
@@ -108,10 +108,10 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex" ref={addToRefs} onClick={() => window.location.href = "https://rooferjacksonvillefl.com/"}>
-                    <img src="Roofing_favicon.png" alt="RooferJacksonvilleFl Favicon" />
-                    <div>
-                        <h3>RooferJacksonvilleFl.com</h3>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://rooferjacksonvillefl.com/"}>
+                    <img className="content-flex-img" src="Roofing_favicon.png" alt="RooferJacksonvilleFl Favicon" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">RooferJacksonvilleFl.com</h3>
                         <p>I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.</p>
                         <em>
                             <p>Skills Used:</p>

@@ -173,7 +173,7 @@ menu, footer {
     transition: all 0.5s ease;
 }
 
-#header > h1 {
+#header .header-text {
     font-size: 6vw;
     font-weight: 800;
     margin: 0;
@@ -181,7 +181,7 @@ menu, footer {
     color: rgba(255, 255, 255, 1);
 }
 
-#header > h1 em {
+#header .header-text #header-em {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     background-clip: text;
     background-clip: text;
@@ -190,7 +190,7 @@ menu, footer {
     font-style: normal;
 }
 
-#header > h1 p {
+#header .header-text #header-bio {
     font-weight: 350;
     font-size: 18px;
     color: rgba(255, 255, 255, 1);
@@ -245,7 +245,7 @@ section {
 }
 */
 
-#introduction > p {
+#introduction #introduction-text {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -263,13 +263,13 @@ section {
     color: rgba(255, 255, 255, 1);
 }
 
-#about-me > div.content-grid {
+#about-me .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-#about-me > div.content-grid div {
+#about-me .content-grid .content-card {
     overflow: hidden;
     border-radius: 10px;
     background-color: rgba(22, 22, 22, 1);
@@ -278,7 +278,7 @@ section {
     transition: background 0.5s ease;
 }
 
-#about-me div.content-grid div h3 {
+#about-me .content-grid .content-card .card-header {
     width: fit-content;
     font-size: 3vw;
     color: rgba(255, 255, 255, 1);
@@ -287,23 +287,23 @@ section {
     transition: color 0.5s ease;
 }
 
-#about-me div.content-grid div p, #about-me div.content-grid div ul li {
+#about-me .content-grid .content-card p, #about-me .content-grid .content-card ul li {
     transition: color 0.5s ease;
     color: none;
 }
 
-#about-me > div.content-grid div:hover {
+#about-me .content-grid .content-card:hover {
     cursor: default;
 }
 
-#about-me div.content-grid div:hover h3 {
+#about-me .content-grid .content-card:hover .card-header {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#about-me div.content-grid div:hover p, #about-me div.content-grid div:hover ul li {
+#about-me .content-grid .content-card:hover p, #about-me .content-grid .content-card:hover ul li {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -317,11 +317,11 @@ section {
     color: rgba(255, 255, 255, 1);
 }
 
-#projects div {
+#projects .content-flex {
     margin: 0;
 }
 
-#projects div div.content-flex {
+#projects .content-flex .content-flex-card {
     display: flex;
     align-items: stretch;
     margin-bottom: 40px;
@@ -332,15 +332,15 @@ section {
     overflow: hidden;
 }
 
-#projects div div.content-flex.highlight {
+#projects .content-flex .content-flex-card.highlight {
     transform: scale(1.03);
 }
 
-#projects div div.content-flex:nth-child(odd) {
+#projects .content-flex .content-flex-card:nth-child(odd) {
     flex-direction: row;
 }
 
-#projects div div.content-flex:nth-child(even) {
+#projects .content-flex .content-flex-card:nth-child(even) {
     flex-direction: row-reverse;
 }
 /*
@@ -348,7 +348,7 @@ section {
     transform: scale(1.03);
 }
 */
-#projects div div.content-flex > div {
+#projects .content-flex .content-flex-card .content-flex-content {
     background-color: rgba(22, 22, 22, 1);
     padding: 20px 30px;
     flex-grow: 1;
@@ -359,24 +359,21 @@ section {
     box-sizing: border-box;
 }
     
-#projects div div.content-flex div p, #projects div div.content-flex div li, #projects div div.content-flex div em {
+#projects .content-flex .content-flex-card .content-flex-content p, #projects .content-flex .content-flex-card .content-flex-content li, #projects .content-flex .content-flex-card .content-flex-content em {
     color: rgba(255, 255, 255, 1);
 }
 
-#projects div div.content-flex div h3 {
+#projects .content-flex .content-flex-card .content-flex-content .content-flex-header {
     width: fit-content;
     margin: 0;
     margin-bottom: 16px;
-}
-
-#projects div div.content-flex div h3 {
     color: rgba(255, 255, 255, 1);
     font-size: 3vw;
     text-decoration: none;
     transition: color 0.5s ease;
 }
 
-#projects div div.content-flex.highlight div h3 {
+#projects .content-flex .content-flex-card.highlight .content-flex-content .content-flex-header {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -384,11 +381,11 @@ section {
     text-decoration: none;
 }
 
-#projects div div.content-flex div ul {
+#projects .content-flex .content-flex-card .content-flex-content ul {
     margin-bottom: 0;
 }
 
-#projects div div.content-flex img {
+#projects .content-flex .content-flex-card .content-flex-img {
     width: 35vw;
     height: 35vw;
     flex-shrink: 0;
@@ -397,13 +394,13 @@ section {
     transition: filter 0.5s ease;
 }
 
-#projects div div.content-flex img:hover {
+#projects .content-flex .content-flex-card .content-flex-img:hover {
     filter: none;
 }
-
+/*
 .lbyrnth-logo-container {
-    position: relative; /* Make the container the positioning context */
-    display: inline-block; /* Ensure the container wraps tightly around the image */
+    position: relative;
+    display: inline-block;
 }
 
 .lbyrnth-logo-container::before {
@@ -412,18 +409,19 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 110%; /* Slightly larger than the image */
-    height: 110%; /* Slightly larger than the image */
+    width: 110%;
+    height: 110%;
     background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(22, 22, 22, 0) 60%);
-    border-radius: 50%; /* Make it circular */
+    border-radius: 50%;
 }
 
 .lbyrnth-logo {
     display: block;
-    width: 35vw; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 35vw;
+    height: auto;
     object-fit: contain;
 }
+*/
 
 /* 'Skills' section styling */
 #skills {
@@ -436,13 +434,13 @@ section {
 }
 
 
-#skills > div.content-grid {
+#skills .content-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-#skills > div.content-grid div {
+#skills .content-grid .content-card {
     background-color: rgba(22, 22, 22, 1);
     padding: 20px 30px;
     transition: background-color 0.5s ease;
@@ -450,7 +448,7 @@ section {
     border-radius: 10px;
 }
 
-#skills div.content-grid div h3 {
+#skills .content-grid .content-card .card-header {
     width: fit-content;
     font-size: 3vw;
     color: rgba(255, 255, 255, 1);
@@ -459,37 +457,25 @@ section {
     transition: color 0.5s ease;
 }
 
-#skills div.content-grid div p, #skills div.content-grid div ul li {
+#skills .content-grid .content-card p, #skills .content-grid .content-card ul li {
     color: rgba(22, 22, 22, 1);
     transition: color 0.5s ease;
 }
 
-#skills div.content-grid div ul li a {
-    color: rgba(22, 22, 22, 1);
-    transition: color 0.5s ease;
-}
-
-#skills > div.content-grid div:hover {
+#skills .content-grid .content-card:hover {
     background-color: rgba(22, 22, 22, 1);
     cursor: default;
 }
 
-#skills div.content-grid div:hover h3 {
+#skills .content-grid .content-card:hover .card-header {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#skills div.content-grid div:hover p, #skills div.content-grid div:hover ul li, #skills div.content-grid div:hover ul li a {
+#skills .content-grid .content-card:hover p, #skills .content-grid .content-card:hover ul li, #skills .content-grid .content-card:hover ul li a {
     color: rgba(255, 255, 255, 1);
-}
-
-#skills div.content-grid div:hover ul a:hover {
-    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* 'Contact Me' section styling */
@@ -502,25 +488,35 @@ section {
     grid-template-columns: 1fr 2fr;
 }
 
-#contact-me #contact-me-header, #contact-me h3, #contact-me p {
+#contact-me #contact-me-header, #contact-me p {
     color: rgba(255, 255, 255, 1);
 }
 
-#contact-me h3 {
-    font-size: 3vw;
-}
-
-#contact-me .contact-row .contact-col p {
+#contact-me .contact-row #contact-info p {
     margin-top: 0;
 }
 
-#contact-me .contact-row .contact-col a {
+#contact-me .contact-row #contact-info a {
+    position: relative;
     margin-top: 0;
     color: rgba(255, 255, 255, 1);
+    text-decoration: none;
 }
 
-#contact-me a:hover {
-    color: rgba(255, 255, 255, 1);
+#contact-me .contact-row #contact-info a::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    transition: all 0.5s ease;
+}
+
+#contact-me .contact-row #contact-info a:hover::after {
+    width: 100%;
 }
 
 /*
@@ -642,7 +638,7 @@ section {
 
 /* Responsive design styling */
 @media (max-width: 768px) {
-    #header > h1 {
+    #header h1 {
         font-size: 8vw;
     }
 
@@ -667,7 +663,7 @@ section {
         font-size: 5vw;
     }
 
-    #about-me > div.content-grid, #skills > div.content-grid {
+    #about-me div.content-grid, #skills div.content-grid {
         grid-template-columns: 1fr;
     }
 
@@ -680,7 +676,7 @@ section {
         height: auto;
     }
 
-    #projects div div.content-flex > div {
+    #projects div div.content-flex div {
         height: auto;
     }
 
