@@ -59,6 +59,7 @@ menu, footer {
     height: 40px;
     margin: 0 auto 0 1.5vw;
     left: 0;
+    cursor: pointer;
 }
 
 #navbar .navbar-element a {
@@ -190,10 +191,10 @@ menu, footer {
 }
 
 #header > h1 p {
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 350;
+    font-size: 18px;
     color: rgba(255, 255, 255, 1);
-    margin: 5px 0 0 2px;
+    margin: 20px 0 0 2px;
 }
 
 /* General styling */
@@ -536,7 +537,7 @@ section {
 #contact-me fieldset {
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgb(83, 83, 83);
 }
 
 #contact-me input, #contact-me textarea, #contact-me button {
@@ -552,6 +553,11 @@ section {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 5px;
+}
+
+#contact-me textarea {
+    min-height: 80px;
+    max-height: 300px;
 }
 
 #contact-me label, #contact-me input, #contact-me textarea, #contact-me em {
