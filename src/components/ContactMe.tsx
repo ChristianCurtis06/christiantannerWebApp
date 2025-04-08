@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { db } from "../firebaseConfig";
-import { addDoc, collection } from "firebase/firestore";
 
 interface ContactFormProps {
     name: string;
@@ -29,7 +27,19 @@ const ContactForm: React.FC = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            await addDoc(collection(db, "contact form submissions"), contactForm);
+            await fetch('https://hook.us2.make.com/gglkyvc4pvhwm77o94dls4ed5t6646ul', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(contactForm)
+            });
+            setContactForm({
+                name: "",
+                email: "",
+                phone: "",
+                message: "",
+            });
             alert("Form submitted! Thanks for reaching out!");
         } catch (error) {
             setError(error as string);
