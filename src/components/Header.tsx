@@ -31,7 +31,7 @@ const Header: React.FC = () => {
                 <span>Hello,</span>
                 <br />
                 <em id="header-em">I'm Christian!</em>
-                <p id="header-bio">Web Developer | Graphic Designer | SEO Specialist</p>
+                <p id="header-bio">Front-end Developer | React Specialist | Web Design Enthusiast</p>
             </h1>
         </header>
     );
