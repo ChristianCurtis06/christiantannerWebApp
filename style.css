@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Clash Display';
+    src: url('./fonts/ClashDisplay-Variable.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
 body {
     z-index: 1;
     margin: 0;
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Clash Display', 'Montserrat', sans-serif;
     color: rgba(22, 22, 22, 1);
 }
 
@@ -64,7 +71,7 @@ menu, footer {
 }
 
 #navbar .navbar-elements .navbar-element a {
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
@@ -78,9 +85,8 @@ menu, footer {
     font-size: 16px;
     font-weight: 500;
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
-    background-clip: text;
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -128,7 +134,7 @@ menu, footer {
 */
 
 #navbar .navbar-element a {
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -247,7 +253,8 @@ menu, footer {
 p, li {
     color: rgb(22, 22, 22, 1);
     font-size: 16px;
-    font-family: 'Inconsolata', 'Montserrat', sans-serif;
+    line-height: 25px;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
 }
 
 li {
@@ -373,6 +380,30 @@ section {
 #about-me .content-grid .content-card:hover p, #about-me .content-grid .content-card:hover ul li {
     color: rgba(255, 255, 255, 1);
     opacity: 1;
+}
+
+#about-me .content-grid .content-card a {
+    position: relative;
+    margin-top: 0;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+#about-me .content-grid .content-card a::after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
+    transition: all 0.5s ease;
+}
+
+#about-me .content-grid .content-card a:hover::after,
+#about-me .content-grid .content-card a:focus::after {
+    width: 100%;
 }
 
 /* 'Projects' section styling */
@@ -675,7 +706,7 @@ section {
 
 #contact-me label, #contact-me input, #contact-me textarea, #contact-me em {
     color: rgba(255, 255, 255, 1);
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
 }
 
 #contact-me label {
@@ -683,13 +714,13 @@ section {
 }
 
 #contact-me input, #contact-me textarea {
-    font-family: 'Inconsolata', 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
     font-size: 16px;
 }
 
 #contact-me legend, #contact-me button {
     color: rgba(255, 255, 255, 1);
-    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
@@ -742,7 +773,7 @@ section {
     left: 0;
     width: 200%;
     height: 60px;
-    background: url("CC_Signature-white.png") repeat-x;
+    background: url("christiantanner_FAV-Transparent.png") repeat-x;
     background-size: 60px auto;
     opacity: 0.1;
     animation: scroll-left 30s linear infinite;

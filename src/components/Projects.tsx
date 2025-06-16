@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
     return (
         <section id="projects">
             <h2 className="section-header" id="projects-header">Projects</h2>
-
+aa
             <div className="content-flex">
                 <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "#"}>
                     {/* 
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://allaboutbaja.net/"}>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.open("https://allaboutbaja.net/", "_blank")}>
                     <img className="content-flex-img" src="AllAboutBaja_square.png" alt="AllAboutBaja Logo" />
                     <div className="content-flex-content">
                         <h3 className="content-flex-header">AllAboutBaja.net</h3>
@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://www.buysellammo.com/"}>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.open("https://www.buysellammo.com/", "_blank")}>
                     <img className="content-flex-img" src="BSA_square.png" alt="BuySellAmmo Logo" />
                     <div className="content-flex-content">
                         <h3 className="content-flex-header">BuySellAmmo.com</h3>
@@ -93,7 +93,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
                 
-                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://www.youtube.com/@EPXG"}>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.open("https://www.youtube.com/@EPXG", "_blank")}>
                     <img className="content-flex-img" src="EPXG_favicon.png" alt="EPXG Favicon" />
                     <div className="content-flex-content">
                         <h3 className="content-flex-header">EPXG Channel</h3>
@@ -108,7 +108,7 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "https://rooferjacksonvillefl.com/"}>
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.open("https://rooferjacksonvillefl.com/", "_blank")}>
                     <img className="content-flex-img" src="Roofing_favicon.png" alt="RooferJacksonvilleFl Favicon" />
                     <div className="content-flex-content">
                         <h3 className="content-flex-header">RooferJacksonvilleFl.com</h3>
@@ -117,6 +117,22 @@ const Projects: React.FC = () => {
                             <p>Skills Used:</p>
                             <ul>
                                 <li>Wordpress</li>
+                                <li>Adobe Illustrator</li>
+                            </ul>
+                        </em>
+                    </div>
+                </div>
+                
+                <div className="content-flex-card" ref={addToRefs} onClick={() => window.open("https://the-experience-hub.com/", "_blank")}>
+                    <img className="content-flex-img" src="The Experience Hub_FAV-Blue.png" alt="The Experience Hub Favicon" />
+                    <div className="content-flex-content">
+                        <h3 className="content-flex-header">The-Experience-Hub.com</h3>
+                        <p>I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.</p>
+                        <em>
+                            <p>Skills Used:</p>
+                            <ul>
+                                <li>Shopify</li>
+                                <li>Liquid</li>
                                 <li>Adobe Illustrator</li>
                             </ul>
                         </em>

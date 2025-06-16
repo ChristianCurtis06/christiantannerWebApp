@@ -63,10 +63,9 @@ const About: React.FC = () => {
                     className="content-card"
                     id="education-about-me"
                     >
-                    <h3 className="card-header">Education</h3>
+                    <h3 className="card-header">Accreditations</h3>
                     <ul>
-                        <li><b>High School Diploma</b>, Graduated in May 2024 from <i>Our Legacy Academy (Homeschool)</i></li>
-                        <li><b>Software Engineering Bootcamp</b>, Currently enrolled in a program provided by <i>Coding Temple</i></li>
+                        <li><a href="https://www.credential.net/537b20c1-9cd7-4d56-b698-844ba5a90ca6#acc.JDYc54nB"><b>Software Engineering Certificate</b></a>, Graduated in May 2025 from <i>Coding Temple</i></li>
                     </ul>
                 </div>
 

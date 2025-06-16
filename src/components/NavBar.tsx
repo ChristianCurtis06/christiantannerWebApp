@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
         <li className="navbar-element"><a id="navbar-about-me" href="/#about-me">About</a></li>
         <li className="navbar-element"><a id="navbar-projects" href="/#projects">Projects</a></li>
         <li className="navbar-element"><a id="navbar-skills" href="/#skills">Skills</a></li>
-        <li className="navbar-element"><Link id="navbar-contact-me" to="/contact">Contact </Link></li>
+        <li className="navbar-element"><Link id="navbar-contact-me" to="/contact">Let's Chat</Link></li>
       </ul>
     </nav>
   );
