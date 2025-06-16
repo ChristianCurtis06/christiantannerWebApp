@@ -68,47 +68,6 @@ const About: React.FC = () => {
                         <li><a href="https://www.credential.net/537b20c1-9cd7-4d56-b698-844ba5a90ca6#acc.JDYc54nB"><b>Software Engineering Certificate</b></a>, Graduated in May 2025 from <i>Coding Temple</i></li>
                     </ul>
                 </div>
-
-                <div
-                    onMouseMove={(e) => handleMouseMove(e, "career")}
-                    onMouseEnter={() => handleMouseEnter("career")}
-                    onMouseLeave={handleMouseLeave}
-                    style={{
-                        background: interaction.isHovering && interaction.hoveredElement === "career"
-                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
-                        : "rgba(22, 22, 22, 1)",
-                    }}
-                    className="content-card"
-                    id="career-goals-about-me"
-                    >
-                    <h3 className="card-header">Career Goals</h3>
-                    <p>It is my goal to...</p>
-                    <ul>
-                        <li>...become a well-rounded designer and developer.</li>
-                        <li>...collaborate with notable creative minds.</li>
-                    </ul>
-                </div>
-
-                <div
-                    onMouseMove={(e) => handleMouseMove(e, "interests")}
-                    onMouseEnter={() => handleMouseEnter("interests")}
-                    onMouseLeave={handleMouseLeave}
-                    style={{
-                        background: interaction.isHovering && interaction.hoveredElement === "interests"
-                        ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
-                        : "rgba(22, 22, 22, 1)",
-                    }}
-                    className="content-card"
-                    id="personal-interests-about-me"
-                    >
-                    <h3 className="card-header">Personal Interests</h3>
-                    <ul>
-                        <li>Jiu-Jitsu</li>
-                        <li>Graphic Design</li>
-                        <li>Weightlifting and Running</li>
-                        <li>Character Illustration</li>
-                    </ul>
-                </div>
             </div>
         </section>
     );

@@ -57,14 +57,14 @@ menu, footer {
     width: auto;
     height: auto;
     left: 0;
-    padding: 3vh 1.9vh;
-    margin: 0;
+    padding: 8px 10px;
+    margin: 15px 8px;
 }
 
 #navbar #navbar-favicon {
     position: relative;
     height: 60px;
-    margin: 0 auto 0 1.9vh;
+    margin: 0 auto 0 10px;
     left: 0;
     cursor: pointer;
 }
@@ -80,13 +80,28 @@ menu, footer {
     transition: all 0.5s ease;
 }
 
-#navbar .navbar-elements .navbar-element #navbar-contact-me {
-    font-size: 16px;
-    font-weight: 500;
-    background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+#navbar .navbar-elements #navbar-contact-element {
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    transition: background 0.5s, border-color 0.5s, box-shadow 0.5s, color 0.5s;
+}
+
+#navbar .navbar-elements #navbar-contact-element a {
+    color: rgb(22, 22, 22, 1);
+    font-weight: 600;
+    transition: color 0.5s ease;
+}
+
+#navbar .navbar-elements #navbar-contact-element:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background: transparent;
+    transition: background 0.5s, border-color 0.5s, box-shadow 0.5s, color 0.5s;
+}
+
+#navbar .navbar-elements #navbar-contact-element:hover a {
+    color: rgba(255, 255, 255, 1);
 }
 
 #navbar .navbar-elements .navbar-element a::after {
@@ -95,10 +110,11 @@ menu, footer {
     left: 0;
     bottom: -3px;
     width: 0;
-    height: 0.1em;
+    height: 2px;
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
     transition: all 0.5s ease;
 }
+
 /*
 #navbar .navbar-element a:hover {
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
@@ -108,8 +124,13 @@ menu, footer {
 }
 */
 
-#navbar .navbar-elements .navbar-element a:hover::after {
+#navbar .navbar-elements .navbar-element a:hover::after,
+#navbar .navbar-elements .navbar-element a:focus::after {
     width: 100%;
+}
+
+#navbar .navbar-elements #navbar-contact-element a:hover::after {
+    width: 0;
 }
 
 #navbar .navbar-elements.scrolled {
