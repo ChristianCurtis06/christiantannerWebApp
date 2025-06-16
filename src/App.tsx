@@ -1,4 +1,6 @@
 import HomePage from "./components/HomePage";
+import ContactForm from "./components/Contact";
+import { Routes, Route } from "react-router-dom";
 import InteractionContext from "./context/InteractionContext";
 import { useState, useEffect } from "react";
 import "../style.css";
@@ -31,7 +33,10 @@ const App: React.FC = () => {
 
   return (
     <InteractionContext.Provider value={{ interaction, setInteraction }}>
-      <HomePage />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
     </InteractionContext.Provider>
   );
 };

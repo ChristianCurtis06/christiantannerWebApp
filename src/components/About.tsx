@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import InteractionContext from "../context/InteractionContext";
 
-const AboutMe: React.FC = () => {
+const About: React.FC = () => {
     const { interaction, setInteraction } = useContext(InteractionContext);
 
     const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>, id: string) => {
@@ -115,4 +115,4 @@ const AboutMe: React.FC = () => {
     );
 };
 
-export default AboutMe;
+export default About;

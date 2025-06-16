@@ -3,11 +3,9 @@ import PageLayout from "./PageLayout";
 import Header from "./Header";
 import HeaderArrow from "./HeaderArrow";
 import Introduction from "./Introduction";
-import AboutMe from "./AboutMe";
+import About from "./About";
 import Projects from "./Projects";
 import Skills from "./Skills"
-import ContactForm from "./ContactMe";
-import Footer from "./Footer";
 
 const HomePage: React.FC = () => {
     return (
@@ -16,12 +14,10 @@ const HomePage: React.FC = () => {
             <HeaderArrow />
             <main>
                 <Introduction />
-                <AboutMe />
+                <About />
                 <Projects />
                 <Skills />
-                <ContactForm />
             </main>
-            <Footer />
         </PageLayout>
     );
 };
