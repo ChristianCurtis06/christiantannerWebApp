@@ -2,7 +2,8 @@ import { useState } from "react";
 import PageLayout from "./PageLayout";
 
 interface ContactFormProps {
-    name: string;
+    firstName: string;
+    lastName: string;
     email: string;
     phone?: string;
     message?: string;
@@ -10,7 +11,8 @@ interface ContactFormProps {
 
 const ContactForm: React.FC = () => {
     const [contactForm, setContactForm] = useState<ContactFormProps>({
-        name: "",
+        firstName: "",
+        lastName: "",
         email: "",
         phone: "",
         message: "",
@@ -36,7 +38,8 @@ const ContactForm: React.FC = () => {
                 body: JSON.stringify(contactForm)
             });
             setContactForm({
-                name: "",
+                firstName: "",
+                lastName: "",
                 email: "",
                 phone: "",
                 message: "",
@@ -56,9 +59,9 @@ const ContactForm: React.FC = () => {
                     <div className="contact-col" id="contact-info">
                         <h2 className="section-header" id="contact-me-header">Contact Me</h2>
                         <p>Email: <a href="mailto:hello@christiantanner.com">Hello@christiantanner.com</a></p>
-                
+                        <p>Instagram: <a href="https://www.instagram.com/christiantannerdev/">My Profile</a></p>
                         <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-curtis-113436326/">My Profile</a></p>
-                        <p>GitHub: <a href="https://github.com/ChristianCurtis06">My GitHub</a></p>
+                        <p>GitHub: <a href="https://github.com/ChristianCurtis06">My Portfolio</a></p>
                     </div>
 
                     <div className="contact-col" id="contact-form">
@@ -66,24 +69,24 @@ const ContactForm: React.FC = () => {
                             <fieldset>
                                 <div className="name-fields">
                                     <div className="name-field">
-                                        <label htmlFor="first-name">First Name:</label>
+                                        <label htmlFor="firstName">First Name:</label>
                                         <input
                                             type="text"
-                                            id="first-name"
-                                            name="first-name"
-                                            value={contactForm["first-name"]}
+                                            id="firstName"
+                                            name="firstName"
+                                            value={contactForm["firstName"]}
                                             placeholder="First name (required)"
                                             onChange={handleChange}
                                             required
                                         />
                                     </div>
                                     <div className="name-field">
-                                        <label htmlFor="last-name">Last Name:</label>
+                                        <label htmlFor="lastName">Last Name:</label>
                                         <input
                                             type="text"
-                                            id="last-name"
-                                            name="last-name"
-                                            value={contactForm["last-name"]}
+                                            id="lastName"
+                                            name="lastName"
+                                            value={contactForm["lastName"]}
                                             placeholder="Last name (required)"
                                             onChange={handleChange}
                                             required

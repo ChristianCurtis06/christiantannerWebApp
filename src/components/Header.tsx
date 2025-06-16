@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     return (
         <header id="header">
             <h1 className="header-text" style={{ opacity }}>
-                <span>Hello,</span>
+                <span>Hey,</span>
                 <br />
                 <em id="header-em">I'm Christian!</em>
                 <p id="header-bio">Front-end Developer | React Specialist | Web Design Enthusiast</p>

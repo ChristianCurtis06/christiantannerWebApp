@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
 
     return (
         <section id="projects">
-            <h2 className="section-header" id="projects-header">Projects</h2>
+            <h2 className="section-header" id="projects-header">My Work</h2>
 aa
             <div className="content-flex">
                 <div className="content-flex-card" ref={addToRefs} onClick={() => window.location.href = "#"}>

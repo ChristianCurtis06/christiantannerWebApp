@@ -5,7 +5,7 @@ import HeaderArrow from "./HeaderArrow";
 import Introduction from "./Introduction";
 import About from "./About";
 import Projects from "./Projects";
-import Skills from "./Skills"
+import Services from "./Services"
 
 const HomePage: React.FC = () => {
     return (
@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
                 <Introduction />
                 <About />
                 <Projects />
-                <Skills />
+                <Services />
             </main>
         </PageLayout>
     );

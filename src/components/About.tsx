@@ -32,7 +32,7 @@ const About: React.FC = () => {
 
     return (
         <section id="about-me">
-            <h2 className="section-header" id="about-me-header">About Me</h2>
+            <h2 className="section-header" id="about-me-header">About</h2>
 
             <div className="content-grid">
                 <div
