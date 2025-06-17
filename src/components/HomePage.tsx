@@ -6,6 +6,7 @@ import Introduction from "./Introduction";
 import About from "./About";
 import Projects from "./Projects";
 import Services from "./Services"
+import Pricing from "./Pricing";
 
 const HomePage: React.FC = () => {
     return (
@@ -17,6 +18,7 @@ const HomePage: React.FC = () => {
                 <About />
                 <Projects />
                 <Services />
+                <Pricing />
             </main>
         </PageLayout>
     );
