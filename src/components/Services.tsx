@@ -31,10 +31,8 @@ const Services: React.FC = () => {
     };
 
     return (
-        
         <section id="services">
             <h2 className="section-header" id="services-header">Services</h2>
-
             <div className="content-grid">
                 <div
                     onMouseMove={(e) => handleMouseMove(e, "interests")}
@@ -48,7 +46,7 @@ const Services: React.FC = () => {
                     className="content-card"
                     id="website-development-services"
                 >
-                    <h3 className="card-header">Website Development</h3>
+                    <h3 className="card-header">Web Development</h3>
                     <p>I offer tailored web development consulting for professionals and small businesses, creating responsive, user-friendly websites with clean code, modern design, and intuitive navigation. My work incorporates on-page SEO best practices and custom automation tools to improve visibility and streamline operations. Every project is shaped through close collaboration to ensure it aligns with each client’s brand, goals, and industry.</p>
                 </div>
 

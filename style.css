@@ -82,6 +82,7 @@ menu, footer {
 
 #navbar .navbar-elements #navbar-contact-element {
     border: 1px solid transparent;
+    cursor: pointer;
     box-sizing: border-box;
     border-radius: 10px;
     background: rgba(255, 255, 255, 1);
@@ -529,7 +530,7 @@ section {
     height: 35vw;
     flex-shrink: 0;
     object-fit: contain;
-    filter: grayscale(100%);
+    filter: grayscale(10) brightness(0.8);
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -641,9 +642,16 @@ section {
     background-color: rgb(22, 22, 22, 1);
 }
 
+#pricing h3 {
+    color: rgb(255, 255, 255, 1);
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 20px 0 15px 0;
+}
+
 .section-title {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 40px;
 }
 
@@ -652,7 +660,6 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -660,9 +667,8 @@ section {
     border-radius: 10px;
     border: 1px solid rgb(83, 83, 83);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 30px 20px;
-    width: 100%;
-    max-width: 300px;
+    padding: 60px 20px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -673,14 +679,15 @@ section {
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .card-price {
     font-size: 40px;
     font-family: "Clash Display", 'Montserrat', sans-serif;
     background: linear-gradient(to right, rgb(255, 179, 57) 0%, rgb(255, 92, 97) 75%, rgb(235, 23, 73) 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 800;
     margin: 0;
@@ -689,7 +696,8 @@ section {
 
 .features-list {
     list-style: none;
-    text-align: center;
+    text-align: left;
+    width: 180px;
     padding: 0;
     margin: 0 0 24px;
 }
@@ -700,7 +708,7 @@ section {
 }
 
 .cta-button {
-    padding: 10px 15px;
+    padding: 15px;
     background-color: rgba(255, 255, 255, 1);
     color: rgb(22, 22, 22, 1);
     font-family: 'Montserrat', 'Clash Display', sans-serif;
@@ -708,7 +716,8 @@ section {
     font-weight: 600;
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 10px;
-    margin-bottom: 30px;
+    width: 80%;
+    margin-top: auto;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.5s cubic-bezier(0.77, 0, 0.175, 1), color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
@@ -720,33 +729,33 @@ section {
 }
 
 /* 'Contact' page styling */
-#contact-me {
+#contact {
     height: 100vh;
     padding: 150px 40px 30px 40px;
     background-color: rgba(22, 22, 22, 1);
 }
 
-#contact-me .contact-row {
+#contact .contact-row {
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
 
-#contact-me #contact-me-header, #contact-me p {
+#contact #contact-header, #contact p {
     color: rgba(255, 255, 255, 1);
 }
 
-#contact-me .contact-row #contact-info p {
+#contact .contact-row #contact-info p {
     margin-top: 0;
 }
 
-#contact-me .contact-row #contact-info a {
+#contact .contact-row #contact-info a {
     position: relative;
     margin-top: 0;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
 }
 
-#contact-me .contact-row #contact-info a::after {
+#contact .contact-row #contact-info a::after {
     z-index: 1;
     content: "";
     position: absolute;
@@ -758,12 +767,12 @@ section {
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-#contact-me .contact-row #contact-info a:hover::after {
+#contact .contact-row #contact-info a:hover::after {
     width: 100%;
 }
 
 /*
-#contact-me .contact-form {
+#contact .contact-form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
@@ -773,14 +782,14 @@ section {
 }
 */
 
-#contact-me fieldset {
+#contact fieldset {
     padding: 20px 25px;
     border-radius: 10px;
     border: 1px solid rgb(83, 83, 83);
     margin-left: 10px;
 }
 
-#contact-me input, #contact-me textarea, #contact-me button {
+#contact input, #contact textarea, #contact button {
     width: 100%;
     padding: 15px;
     margin-top: 10px;
@@ -789,43 +798,43 @@ section {
     box-sizing: border-box;
 }
 
-#contact-me input, #contact-me textarea {
+#contact input, #contact textarea {
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 1);
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-#contact-me .name-fields {
+#contact .name-fields {
     display: flex;
     gap: 20px;
 }
 
-#contact-me .name-field {
+#contact .name-field {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 
-#contact-me textarea {
+#contact textarea {
     min-height: 120px;
     max-height: 300px;
 }
 
-#contact-me label, #contact-me input, #contact-me textarea, #contact-me em {
+#contact label, #contact input, #contact textarea, #contact em {
     color: rgba(255, 255, 255, 1);
     font-family: 'Montserrat', 'Clash Display', sans-serif;
 }
 
-#contact-me label {
+#contact label {
     font-size: 18px;
 }
 
-#contact-me input, #contact-me textarea {
+#contact input, #contact textarea {
     font-family: 'Montserrat', 'Clash Display', sans-serif;
     font-size: 16px;
 }
 
-#contact-me legend, #contact-me button {
+#contact legend, #contact button {
     color: rgba(255, 255, 255, 1);
     font-family: 'Montserrat', 'Clash Display', sans-serif;
     text-transform: uppercase;
@@ -833,27 +842,51 @@ section {
     font-size: 20px;
 }
 
-#contact-me textarea {
+#contact textarea {
     resize: vertical;
 }
 
-#contact-me button {
+#contact button {
     color: rgba(22, 22, 22, 1);
     background-color: rgba(255, 255, 255, 1);
+    font-weight: 600;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
     border: rgb(255, 255, 255) solid 1px;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-#contact-me button:active {
+#contact button:active {
     color: rgba(22, 22, 22, 1);
     background-color: rgba(255, 255, 255, 1);
 }
 
-#contact-me button:hover {
+#contact button:hover {
     color: rgb(255, 255, 255, 1);
     background-color: rgb(22, 22, 22, 1);
+}
+
+#contact .radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+#contact .radio-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+}
+
+#contact .radio-label input[type="radio"] {
+    margin: 0 8px 0 0;
+    accent-color: rgb(255,103,93);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }
 
 /* Footer styling */
@@ -1016,19 +1049,23 @@ section {
         align-items: center;
     }
 
-    #contact-me .contact-row {
-        grid-template-columns: 1fr;
-    }
-
-    #contact-me .contact-row #contact-info {
-        margin-bottom: 20px;
-    }
-
-    #contact-me .contact-row #contact-info a::after {
+    .pricing-card {
         width: 100%;
     }
 
-    #contact-me fieldset {
+    #contact .contact-row {
+        grid-template-columns: 1fr;
+    }
+
+    #contact .contact-row #contact-info {
+        margin-bottom: 20px;
+    }
+
+    #contact .contact-row #contact-info a::after {
+        width: 100%;
+    }
+
+    #contact fieldset {
         margin-left: 0;
     }
 }

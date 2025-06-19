@@ -6,6 +6,7 @@ interface ContactFormProps {
     lastName: string;
     email: string;
     phone?: string;
+    service?: string;
     message?: string;
 }
 
@@ -15,6 +16,7 @@ const ContactForm: React.FC = () => {
         lastName: "",
         email: "",
         phone: "",
+        service: "",
         message: "",
     });
     const [error, setError] = useState<string | null>(null);
@@ -42,6 +44,7 @@ const ContactForm: React.FC = () => {
                 lastName: "",
                 email: "",
                 phone: "",
+                service: "",
                 message: "",
             });
             alert("Form submitted! Thanks for reaching out!");
@@ -54,7 +57,7 @@ const ContactForm: React.FC = () => {
 
     return (
         <PageLayout>
-            <section id="contact-me">
+            <section id="contact">
                 <div className="contact-row">
                     <div className="contact-col" id="contact-info">
                         <h2 className="section-header" id="contact-me-header">Contact Me</h2>
@@ -99,6 +102,42 @@ const ContactForm: React.FC = () => {
                                 <label htmlFor="phone">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone" value={contactForm.phone} pattern="[0-9]{10}" placeholder="Enter your phone number" onChange={handleChange} />
                                 <br />
+                                <label htmlFor="service">What service are you interested in?</label>
+                                <div className="radio-group">
+                                  <label className="radio-label">
+                                    <input
+                                      type="radio"
+                                      id="basic"
+                                      name="service"
+                                      value="Basic Package"
+                                      checked={contactForm.service === "Basic Package"}
+                                      onChange={handleChange}
+                                    />
+                                    Basic Package
+                                  </label>
+                                  <label className="radio-label">
+                                    <input
+                                      type="radio"
+                                      id="premium"
+                                      name="service"
+                                      value="Premium Package"
+                                      checked={contactForm.service === "Premium Package"}
+                                      onChange={handleChange}
+                                    />
+                                    Premium Package
+                                  </label>
+                                  <label className="radio-label">
+                                    <input
+                                      type="radio"
+                                      id="custom"
+                                      name="service"
+                                      value="Custom Package"
+                                      checked={contactForm.service === "Custom Package"}
+                                      onChange={handleChange}
+                                    />
+                                    Custom Package
+                                  </label>
+                                </div>
                                 <label htmlFor="message">What else do I need to know?</label>
                                 <textarea id="message" name="message" value={contactForm.message} rows={4} cols={50} placeholder="Enter your message here" onChange={handleChange} />
                                 <br />

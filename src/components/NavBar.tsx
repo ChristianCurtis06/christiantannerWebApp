@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav id="navbar">
-      <button id="hamburger-menu" onClick={toggleMenu}>
+      <button id="hamburger-menu" onClick={toggleMenu} aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
