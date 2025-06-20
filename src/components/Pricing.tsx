@@ -7,44 +7,44 @@ type PricingTier = {
   ctaText: string;
 };
 
-const webDevelopmentTiers: PricingTier[] = [
+const graphicDesignTiers: PricingTier[] = [
     {
-        title: 'Basic',
+        title: 'Essentials',
+        price: '$ 1,000',
+        features: ['2 Initial Concepts', '1 Social Media Profile Graphic', 'Business Card Design', '2 Revisions'],
+        ctaText: 'Get Started'
+    },
+    {
+        title: 'Brand Builder',
         price: '$ 2,500',
-        features: ['1 Page', 'Basic Styling', 'SEO Optimization', '2 Revisions'],
+        features: ['3 Initial Concepts', '3 Social Media Profile Graphics', 'Email Signature Graphic', '3 Revisions'],
         ctaText: 'Get Started'
     },
     {
         title: 'Premium',
-        price: '$ 7,500',
-        features: ['5 Pages', 'Custom Styling', 'Branding Package', 'SEO Optimization', '3 Revisions', 'Ongoing Support'],
-        ctaText: 'Get Started'
-    },
-    {
-        title: 'Custom',
-        price: '$ ~',
-        features: ['More Than 5 Pages', 'Custom Design and Functionality', 'Complete Branding Package', 'Personalized Workflows'],
+        price: '$ 5,000',
+        features: ['4 Initial Concepts', 'Full Social Media Kit', 'Marketing Assets', 'Branding Guide', 'Unlimited Revisions'],
         ctaText: 'Let\'s Talk'
     }
 ];
 
-const graphicDesignTiers: PricingTier[] = [
+const webDevelopmentTiers: PricingTier[] = [
     {
-        title: 'Basic',
+        title: 'Launch',
         price: '$ 2,500',
-        features: ['1 Page', 'Basic Styling', 'SEO Optimization', '2 Revisions'],
+        features: ['Single Page Site', 'Basic Styling', 'SEO Optimization', '2 Revisions'],
         ctaText: 'Get Started'
     },
     {
-        title: 'Premium',
+        title: 'Scale',
         price: '$ 7,500',
-        features: ['5 Pages', 'Custom Styling', 'Branding Package', 'SEO Optimization', '3 Revisions', 'Ongoing Support'],
+        features: ['Multi-page Site', 'Custom Styling', 'Branding Package', 'SEO Optimization', '3 Revisions', 'Ongoing Support'],
         ctaText: 'Get Started'
     },
     {
         title: 'Custom',
         price: '$ ~',
-        features: ['More Than 5 Pages', 'Custom Design and Functionality', 'Complete Branding Package', 'Personalized Workflows'],
+        features: ['Custom Design & Functionality', 'Complete Branding Package', 'Personalized Workflows'],
         ctaText: 'Let\'s Talk'
     }
 ];
@@ -54,7 +54,7 @@ const Pricing: React.FC = () => {
         <section id="pricing">
             <h2 className="section-header">Pricing Packages</h2>
 
-            <h3>Web Development</h3>
+            <h3 className="pricing-category">Web Development</h3>
             <div className="pricing-grid">
                 {webDevelopmentTiers.map((tier, index) => (
                     <div className="pricing-card" key={index}>
@@ -70,7 +70,7 @@ const Pricing: React.FC = () => {
                 ))}
             </div>
 
-            <h3>Graphic Design</h3>
+            <h3 className="pricing-category">Graphic Design</h3>
             <div className="pricing-grid">
                 {graphicDesignTiers.map((tier, index) => (
                     <div className="pricing-card" key={index}>

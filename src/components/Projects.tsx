@@ -7,15 +7,15 @@ const projects = [
 		alt: "LBYRNTH Logo",
 		desc: "I developed the branding for LBYRNTH, which specializes in escape room packages for rental properties.",
 		skills: ["Adobe Illustrator"],
-		url: "#",
+		url: "#"
 	},
 	{
-		title: "AllAboutBaja.net",
+		title: "All About Baja",
 		img: "AllAboutBaja_square.png",
 		alt: "AllAboutBaja Logo",
 		desc: "I designed the logo and associated graphics for the AllAboutBaja.net travel website.",
 		skills: ["Adobe Illustrator"],
-		url: "https://allaboutbaja.net/",
+		url: "https://allaboutbaja.net/"
 	},
 	// {
 	// 	title: "BuySellAmmo.com",
@@ -23,7 +23,7 @@ const projects = [
 	// 	alt: "BuySellAmmo Logo",
 	// 	desc: "I headed the rebranding of the ammunition resell website BuySellAmmo.com and created their advertisement graphics.",
 	// 	skills: ["Adobe Illustrator"],
-	// 	url: "https://www.buysellammo.com/",
+	// 	url: "https://www.buysellammo.com/"
 	// },
 	// {
 	// 	title: "EPXG Channel",
@@ -31,32 +31,32 @@ const projects = [
 	// 	alt: "EPXG Favicon",
 	// 	desc: "I started and managed the gaming channel Everything Pixel Gaming (EPXG). This included creating content, editing footage, designing thumbnails, and publishing final videos.",
 	// 	skills: ["Adobe Premiere Pro", "Adobe Illustrator"],
-	// 	url: "https://www.youtube.com/@EPXG",
+	// 	url: "https://www.youtube.com/@EPXG"
 	// },
 	{
-		title: "RooferJacksonvilleFl.com",
+		title: "Roofer Jacksonville Fl",
 		img: "Roofing_favicon.png",
 		alt: "RooferJacksonvilleFl Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Wordpress", "Adobe Illustrator"],
-		url: "https://rooferjacksonvillefl.com/",
+		url: "https://rooferjacksonvillefl.com/"
 	},
 	{
-		title: "The-Experience-Hub.com",
+		title: "The Experience Hub",
 		img: "The Experience Hub_FAV-Blue.png",
 		alt: "The Experience Hub Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
-		skills: ["Shopify", "Liquid", "Squarespace", "Adobe Illustrator"],
-		url: "https://the-experience-hub.com/",
+		skills: ["Shopify", "Liquid", "Adobe Illustrator"],
+		url: "https://the-experience-hub.com/"
 	},
 	{
-		title: "TateAVConsulting.com",
+		title: "Tate AV Consulting",
 		img: "TateAV_LOGO-Dark.png",
 		alt: "TateAVConsulting Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Squarespace", "SEO Optimization"],
-		url: "https://tateavconsulting.com/",
-	},
+		url: "https://tateavconsulting.com/"
+	}
 ];
 
 const Projects: React.FC = () => {
