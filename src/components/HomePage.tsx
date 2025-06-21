@@ -7,6 +7,7 @@ import About from "./About";
 import Projects from "./Projects";
 import Services from "./Services"
 import Pricing from "./Pricing";
+import Booking from "./Booking";
 
 const HomePage: React.FC = () => {
     return (
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
                 <Projects />
                 <Services />
                 <Pricing />
+                <Booking />
             </main>
         </PageLayout>
     );

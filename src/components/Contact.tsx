@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import PageLayout from "./PageLayout";
+import ServicesContext from "../context/ServicesContext";
 
 interface ContactFormProps {
     firstName: string;
@@ -11,6 +12,9 @@ interface ContactFormProps {
 }
 
 const ContactForm: React.FC = () => {
+    const { services } = useContext(ServicesContext);
+    const { webDevelopmentTiers, graphicDesignTiers } = services;
+
     const [contactForm, setContactForm] = useState<ContactFormProps>({
         firstName: "",
         lastName: "",
@@ -104,39 +108,18 @@ const ContactForm: React.FC = () => {
                                 <br />
                                 <label htmlFor="service">What service are you interested in?</label>
                                 <div className="radio-group">
-                                  <label className="radio-label">
-                                    <input
-                                      type="radio"
-                                      id="basic"
-                                      name="service"
-                                      value="Basic Package"
-                                      checked={contactForm.service === "Basic Package"}
-                                      onChange={handleChange}
-                                    />
-                                    Basic Package
-                                  </label>
-                                  <label className="radio-label">
-                                    <input
-                                      type="radio"
-                                      id="premium"
-                                      name="service"
-                                      value="Premium Package"
-                                      checked={contactForm.service === "Premium Package"}
-                                      onChange={handleChange}
-                                    />
-                                    Premium Package
-                                  </label>
-                                  <label className="radio-label">
-                                    <input
-                                      type="radio"
-                                      id="custom"
-                                      name="service"
-                                      value="Custom Package"
-                                      checked={contactForm.service === "Custom Package"}
-                                      onChange={handleChange}
-                                    />
-                                    Custom Package
-                                  </label>
+                                {[...webDevelopmentTiers, ...graphicDesignTiers].map((tier) => (
+                                    <label className="radio-label" key={tier.title}>
+                                        <input
+                                        type="radio"
+                                        name="service"
+                                        value={tier.title}
+                                        checked={contactForm.service === tier.title}
+                                        onChange={handleChange}
+                                        />
+                                        {tier.title}
+                                    </label>
+                                ))}
                                 </div>
                                 <label htmlFor="message">What else do I need to know?</label>
                                 <textarea id="message" name="message" value={contactForm.message} rows={4} cols={50} placeholder="Enter your message here" onChange={handleChange} />

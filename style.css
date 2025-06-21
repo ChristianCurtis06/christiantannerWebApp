@@ -640,13 +640,15 @@ section {
 /* 'Pricing' section styling */
 #pricing {
     background-color: rgb(22, 22, 22, 1);
+    border-bottom: 1px solid rgb(83, 83, 83);
 }
 
 #pricing .pricing-category {
+    text-align: center;
     color: rgb(255, 255, 255, 1);
     font-size: 3vw;
     font-weight: 600;
-    margin: 20px 0 15px 0;
+    margin: 30px 0 20px 0;
 }
 
 .pricing-grid {
@@ -668,7 +670,7 @@ section {
 }
 
 .card-title {
-    color: rgba(255, 255, 255, 1);
+    color: rgb(255, 255, 255);
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 10px;
@@ -719,6 +721,50 @@ section {
 }
 
 .cta-button:hover {
+    background-color: rgb(22, 22, 22, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* 'Booking' section styling */
+#booking {
+    background-color: rgba(22, 22, 22, 1);
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#booking .booking-header {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#booking p {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#booking button {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgb(22, 22, 22, 1);
+    font-family: 'Montserrat', 'Clash Display', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s cubic-bezier(0.77, 0, 0.175, 1), color 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+#booking button:hover {
     background-color: rgb(22, 22, 22, 1);
     color: rgba(255, 255, 255, 1);
 }
@@ -878,7 +924,7 @@ section {
 
 #contact .radio-label input[type="radio"] {
     margin: 0 8px 0 0;
-    accent-color: rgb(255,103,93);
+    accent-color: rgb(255, 179, 57);
     width: 15px;
     height: 15px;
     cursor: pointer;
