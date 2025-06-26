@@ -35,11 +35,11 @@ const Services: React.FC = () => {
             <h2 className="section-header" id="services-header">Services</h2>
             <div className="content-grid">
                 <div
-                    onMouseMove={(e) => handleMouseMove(e, "interests")}
-                    onMouseEnter={() => handleMouseEnter("interests")}
+                    onMouseMove={(e) => handleMouseMove(e, "webDevelopment")}
+                    onMouseEnter={() => handleMouseEnter("webDevelopment")}
                     onMouseLeave={handleMouseLeave}
                     style={{
-                        background: interaction.isHovering && interaction.hoveredElement === "interests"
+                        background: interaction.isHovering && interaction.hoveredElement === "webDevelopment"
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}
@@ -51,11 +51,11 @@ const Services: React.FC = () => {
                 </div>
 
                 <div
-                    onMouseMove={(e) => handleMouseMove(e, "background")}
-                    onMouseEnter={() => handleMouseEnter("background")}
+                    onMouseMove={(e) => handleMouseMove(e, "graphicDesign")}
+                    onMouseEnter={() => handleMouseEnter("graphicDesign")}
                     onMouseLeave={handleMouseLeave}
                     style={{
-                        background: interaction.isHovering && interaction.hoveredElement === "background"
+                        background: interaction.isHovering && interaction.hoveredElement === "graphicDesign"
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}

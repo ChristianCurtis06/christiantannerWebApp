@@ -46,7 +46,7 @@ const App: React.FC = () => {
         title: 'Premium',
         price: '$ 5,000',
         features: ['4 Initial Concepts', 'Full Social Media Kit', 'Marketing Assets', 'Branding Guide', 'Unlimited Revisions'],
-        ctaText: 'Let\'s Talk'
+        ctaText: 'Get Started'
       }
     ]
   });

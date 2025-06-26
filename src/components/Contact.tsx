@@ -107,19 +107,37 @@ const ContactForm: React.FC = () => {
                                 <input type="tel" id="phone" name="phone" value={contactForm.phone} pattern="[0-9]{10}" placeholder="Enter your phone number" onChange={handleChange} />
                                 <br />
                                 <label htmlFor="service">What service are you interested in?</label>
-                                <div className="radio-group">
-                                {[...webDevelopmentTiers, ...graphicDesignTiers].map((tier) => (
-                                    <label className="radio-label" key={tier.title}>
-                                        <input
-                                        type="radio"
-                                        name="service"
-                                        value={tier.title}
-                                        checked={contactForm.service === tier.title}
-                                        onChange={handleChange}
-                                        />
-                                        {tier.title}
-                                    </label>
-                                ))}
+                                <div className="radio-groups">
+                                    <div className="radio-group">
+                                    <h3 className="radio-group-title">Web Development</h3>
+                                    {[...webDevelopmentTiers].map((tier) => (
+                                        <label className="radio-label" key={tier.title}>
+                                            <input
+                                            type="radio"
+                                            name="service"
+                                            value={tier.title}
+                                            checked={contactForm.service === tier.title}
+                                            onChange={handleChange}
+                                            />
+                                            {tier.title}
+                                        </label>
+                                    ))}
+                                    </div>
+                                    <div className="radio-group">
+                                    <h3 className="radio-group-title">Graphic Design</h3>
+                                    {[...graphicDesignTiers].map((tier) => (
+                                        <label className="radio-label" key={tier.title}>
+                                            <input
+                                            type="radio"
+                                            name="service"
+                                            value={tier.title}
+                                            checked={contactForm.service === tier.title}
+                                            onChange={handleChange}
+                                            />
+                                            {tier.title}
+                                        </label>
+                                    ))}
+                                    </div>
                                 </div>
                                 <label htmlFor="message">What else do I need to know?</label>
                                 <textarea id="message" name="message" value={contactForm.message} rows={4} cols={50} placeholder="Enter your message here" onChange={handleChange} />

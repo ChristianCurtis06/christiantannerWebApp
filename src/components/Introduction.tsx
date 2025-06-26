@@ -7,7 +7,7 @@ const Introduction: React.FC = () => {
     return (
         <section id="introduction" className={interaction.isScrolled ? "scrolled" : ""}>
             <h2 className="section-header" id="introduction-header">Introduction</h2>
-            <p id="introduction-text">My name is <b>Christian Tanner Curtis</b>! Welcome to my personal portfolio! In this page, I will provide personal information about myself including education, career goals, and personal interests. In addition, I will outline my diversified work experience, project history, and skills. If you would like to talk with me, please visit the 'Contact Me' section. Thank you!</p>
+            <p id="introduction-text">Hey, I'm <b>Christian Tanner Curtis</b>! I am a dynamic front-end developer with experience in the creative marketplace, offering website development services. I am adept at integrating a diverse skillset to serve the consumer and offer user-focused solutions. In addition to my technical skills, I am a collaborative team player with proven expertise and a passion for learning and adapting to fast-paced environments.</p>
         </section> 
     );
   };

@@ -32,7 +32,7 @@ const About: React.FC = () => {
 
     return (
         <section id="about-me">
-            <h2 className="section-header" id="about-me-header">About</h2>
+            <h2 className="section-header" id="about-me-header">Get to Know Me</h2>
 
             <div className="content-grid">
                 <div
@@ -52,11 +52,11 @@ const About: React.FC = () => {
                 </div>
 
                 <div
-                    onMouseMove={(e) => handleMouseMove(e, "education")}
-                    onMouseEnter={() => handleMouseEnter("education")}
+                    onMouseMove={(e) => handleMouseMove(e, "accreditations")}
+                    onMouseEnter={() => handleMouseEnter("accreditations")}
                     onMouseLeave={handleMouseLeave}
                     style={{
-                        background: interaction.isHovering && interaction.hoveredElement === "education"
+                        background: interaction.isHovering && interaction.hoveredElement === "accreditations"
                         ? `radial-gradient(circle at ${interaction.mouseX}px ${interaction.mouseY}px, rgba(83, 83, 83, 0.2) 0%, rgba(22, 22, 22, 1)) 50%`
                         : "rgba(22, 22, 22, 1)",
                     }}

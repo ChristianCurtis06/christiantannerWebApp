@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
         <li className="navbar-element"><a id="navbar-projects" href="/#projects">My Work</a></li>
         <li className="navbar-element"><a id="navbar-services" href="/#services">Services</a></li>
         <li className="navbar-element"><a id="navbar-pricing" href="/#pricing">Pricing</a></li>
-        <li className="navbar-element" id="navbar-contact-element"><Link id="navbar-contact" to="/contact">Let's Chat</Link></li>
+        <li className="navbar-element" id="navbar-contact-element"><Link id="navbar-contact" to="/contact">Let's Talk</Link></li>
       </ul>
     </nav>
   );
