@@ -58,13 +58,13 @@ menu, footer {
     height: auto;
     left: 0;
     padding: 8px 10px;
-    margin: 15px 8px;
+    margin: 20px 8px;
 }
 
 #navbar #navbar-favicon {
     position: relative;
     height: 60px;
-    margin: 0 auto 0 10px;
+    margin: 0 auto 0 20px;
     left: 0;
     cursor: pointer;
 }

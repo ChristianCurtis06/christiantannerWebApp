@@ -33,19 +33,19 @@ const App: React.FC = () => {
       {
         title: 'Essentials',
         price: '$ 1,000',
-        features: ['2 Initial Concepts', '1 Social Media Profile Graphic', 'Business Card Design', '2 Revisions'],
+        features: ['2 Initial Concepts', '1 Social Media Profile Graphic', 'Limited Branding Guide', '1 Revisions'],
         ctaText: 'Get Started'
       },
       {
         title: 'Brand Builder',
         price: '$ 2,500',
-        features: ['3 Initial Concepts', '3 Social Media Profile Graphics', 'Email Signature Graphic', '3 Revisions'],
+        features: ['3 Initial Concepts', '3 Social Media Profile Graphics', 'Full Branding Guide', '2 Revisions'],
         ctaText: 'Get Started'
       },
       {
         title: 'Premium',
         price: '$ 5,000',
-        features: ['4 Initial Concepts', 'Full Social Media Kit', 'Marketing Assets', 'Branding Guide', 'Unlimited Revisions'],
+        features: ['5 Initial Concepts', 'Full Social Media Kit', 'Marketing Assets', 'Expanded Branding Guide', 'Unlimited Revisions'],
         ctaText: 'Get Started'
       }
     ]
