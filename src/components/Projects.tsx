@@ -1,14 +1,14 @@
 import { useEffect, useRef } from "react";
 
 const projects = [
-	{
-		title: "LBYRNTH",
-		img: "LBYRNTH_Logo.png",
-		alt: "LBYRNTH Logo",
-		desc: "I developed the branding for LBYRNTH, which specializes in escape room packages for rental properties.",
-		skills: ["Adobe Illustrator"],
-		url: "#"
-	},
+	// {
+	// 	title: "LBYRNTH",
+	// 	img: "LBYRNTH_Logo.png",
+	// 	alt: "LBYRNTH Logo",
+	// 	desc: "I developed the branding for LBYRNTH, which specializes in escape room packages for rental properties.",
+	// 	skills: ["Adobe Illustrator"],
+	// 	url: "#"
+	// },
 	{
 		title: "All About Baja",
 		img: "AllAboutBaja_square.png",
@@ -56,6 +56,14 @@ const projects = [
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Squarespace", "SEO Optimization"],
 		url: "https://tateavconsulting.com/"
+	},
+	{
+		title: "THoR Works",
+		img: "THoR Works_Fav.png",
+		alt: "ThorWorks Favicon",
+		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
+		skills: ["Wix", "SEO Optimization"],
+		url: "https://thorworks.online/"
 	}
 ];
 
@@ -63,11 +71,11 @@ const Projects: React.FC = () => {
 	const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 	const currentHighlighted = useRef<HTMLDivElement | null>(null); // Track the currently highlighted element
 
-	const addToRefs = (el: HTMLDivElement | null) => {
-		if (el && !projectRefs.current.includes(el)) {
-			projectRefs.current.push(el);
-		}
-	};
+	// const addToRefs = (el: HTMLDivElement | null) => {
+	// 	if (el && !projectRefs.current.includes(el)) {
+	// 		projectRefs.current.push(el);
+	// 	}
+	// };
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
