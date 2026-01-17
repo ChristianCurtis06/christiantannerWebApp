@@ -12,7 +12,7 @@ const Pricing: React.FC = () => {
             <h3 className="pricing-category">Web Development</h3>
             <div className="pricing-grid">
                 {webDevelopmentTiers.map((tier, index) => (
-                    <div className="pricing-card" key={index}>
+                    <div className={`pricing-card ${index === 1 ? 'center' : ''}`} key={index}>
                         <h3 className="card-title">{tier.title}</h3>
                         <p className="card-price">{tier.price}</p>
                         <ul className="features-list">
@@ -28,7 +28,7 @@ const Pricing: React.FC = () => {
             <h3 className="pricing-category">Graphic Design</h3>
             <div className="pricing-grid">
                 {graphicDesignTiers.map((tier, index) => (
-                    <div className="pricing-card" key={index}>
+                    <div className={`pricing-card ${index === 1 ? 'center' : ''}`} key={index}>
                         <h3 className="card-title">{tier.title}</h3>
                         <p className="card-price">{tier.price}</p>
                         <ul className="features-list">
