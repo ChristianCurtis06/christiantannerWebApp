@@ -489,7 +489,7 @@ section {
 */
 #projects .content-flex .content-flex-card .content-flex-content {
     background-color: rgba(22, 22, 22, 1);
-    padding: 20px 50px;
+    padding: 20px 40px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -547,7 +547,7 @@ section {
     height: 35vw;
     flex-shrink: 0;
     object-fit: contain;
-    filter: grayscale(10) brightness(0.8);
+    filter: grayscale(10) brightness(1);
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -691,6 +691,12 @@ section {
 
 .pricing-card.center {
     height: 100%;
+}
+
+.pricing-card:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    cursor: default;
 }
 
 .card-title {

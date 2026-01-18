@@ -48,6 +48,14 @@ const Services: React.FC = () => {
                 >
                     <h3 className="card-header">Web Development</h3>
                     <p>I offer tailored web development consulting for professionals and small businesses, creating responsive, user-friendly websites with clean code, modern design, and intuitive navigation. My work incorporates on-page SEO best practices and custom automation tools to improve visibility and streamline operations. Every project is shaped through close collaboration to ensure it aligns with each client’s brand, goals, and industry.</p>
+                    <p><em>Skills Include:</em></p>
+                    <ul>
+                        <li>React JS</li>
+                        <li>Wordpress</li>
+                        <li>HTML & CSS</li>
+                        <li>Wix</li>
+                        <li>Figma & Framer</li>
+                    </ul>
                 </div>
 
                 <div
@@ -64,6 +72,11 @@ const Services: React.FC = () => {
                     >
                     <h3 className="card-header">Graphic Design</h3>
                     <p>I create high-impact visual design solutions that combine strong UI/UX principles with each client’s brand identity, audience, and goals. From logos and social media templates to full branding packages, I deliver cohesive visuals that elevate both web and print presence. Throughout the process, I provide clear communication and adaptable support to ensure each project aligns with the client’s evolving creative direction.</p>
+                    <p><em>Skills Include:</em></p>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                    </ul>
                 </div>
             </div>
         </section>

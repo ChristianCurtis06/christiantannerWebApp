@@ -9,14 +9,14 @@ const projects = [
 	// 	skills: ["Adobe Illustrator"],
 	// 	url: "#"
 	// },
-	{
-		title: "All About Baja",
-		img: "AllAboutBaja_square.png",
-		alt: "AllAboutBaja Logo",
-		desc: "I designed the logo and associated graphics for the AllAboutBaja.net travel website.",
-		skills: ["Adobe Illustrator"],
-		url: "https://allaboutbaja.net/"
-	},
+	// {
+	// 	title: "All About Baja",
+	// 	img: "AllAboutBaja_square.png",
+	// 	alt: "AllAboutBaja Logo",
+	// 	desc: "I designed the logo and associated graphics for the AllAboutBaja.net travel website.",
+	// 	skills: ["Adobe Illustrator"],
+	// 	url: "https://allaboutbaja.net/"
+	// },
 	// {
 	// 	title: "BuySellAmmo.com",
 	// 	img: "BSA_square.png",
@@ -34,16 +34,8 @@ const projects = [
 	// 	url: "https://www.youtube.com/@EPXG"
 	// },
 	{
-		title: "Roofer Jacksonville Fl",
-		img: "Roofing_favicon.png",
-		alt: "RooferJacksonvilleFl Favicon",
-		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
-		skills: ["Wordpress", "Adobe Illustrator"],
-		url: "https://rooferjacksonvillefl.com/"
-	},
-	{
 		title: "The Experience Hub",
-		img: "The Experience Hub_FAV-Blue.png",
+		img: "The_Experience_Hub-Promo.png",
 		alt: "The Experience Hub Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Shopify", "Liquid", "Adobe Illustrator"],
@@ -51,7 +43,7 @@ const projects = [
 	},
 	{
 		title: "Tate AV Consulting",
-		img: "TateAV_LOGO-Dark.png",
+		img: "Tate_AV-Promo.png",
 		alt: "TateAVConsulting Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Squarespace", "SEO Optimization"],
@@ -59,11 +51,19 @@ const projects = [
 	},
 	{
 		title: "THoR Works",
-		img: "THoR Works_Fav.png",
+		img: "THoR_Works-Promo.png",
 		alt: "ThorWorks Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
 		skills: ["Wix", "SEO Optimization"],
 		url: "https://thorworks.online/"
+	},
+	{
+		title: "Roofer Jacksonville Fl",
+		img: "Jacksonville_Roofer-Promo.png",
+		alt: "RooferJacksonvilleFl Favicon",
+		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
+		skills: ["Wordpress", "Adobe Illustrator"],
+		url: "https://rooferjacksonvillefl.com/"
 	}
 ];
 
