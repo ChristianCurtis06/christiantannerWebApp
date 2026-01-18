@@ -12,13 +12,13 @@ const App: React.FC = () => {
     webDevelopmentTiers: [
       {
         title: 'Launch',
-        price: '$ 2,500',
+        price: '$ 2,500*',
         features: ['Single Page Site ', 'Basic Styling', 'SEO Optimization', '2 Revisions'],
         ctaText: 'Get Started'
       },
       {
         title: 'Scale',
-        price: '$ 7,500',
+        price: '$ 7,500*',
         features: ['Multi-page Site', 'Custom Styling', 'SEO Optimization', '3 Revisions', 'Ongoing Support'],
         ctaText: 'Get Started'
       },
@@ -32,19 +32,19 @@ const App: React.FC = () => {
     graphicDesignTiers: [
       {
         title: 'Essentials',
-        price: '$ 1,000',
+        price: '$ 1,000*',
         features: ['2 Initial Concepts', '1 Social Media Profile Graphic', 'Limited Branding Guide', '1 Revisions'],
         ctaText: 'Get Started'
       },
       {
         title: 'Brand Builder',
-        price: '$ 2,500',
+        price: '$ 2,500*',
         features: ['3 Initial Concepts', '3 Social Media Profile Graphics', 'Full Branding Guide', '2 Revisions'],
         ctaText: 'Get Started'
       },
       {
         title: 'Premium',
-        price: '$ 5,000',
+        price: '$ 5,000*',
         features: ['5 Initial Concepts', 'Full Social Media Kit', 'Marketing Assets', 'Expanded Branding Guide', 'Unlimited Revisions'],
         ctaText: 'Get Started'
       }

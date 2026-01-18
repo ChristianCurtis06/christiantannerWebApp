@@ -480,7 +480,7 @@ section {
 }
 
 #projects .content-flex .content-flex-card:nth-child(even) {
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 /*
 #projects div .content-flex:hover {
@@ -759,6 +759,13 @@ section {
     border: 1px solid transparent;
     color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgb(255, 92, 97);
+}
+
+#pricing .disclaimer {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 /* 'Booking' section styling */

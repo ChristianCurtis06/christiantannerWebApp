@@ -24,6 +24,7 @@ const Pricing: React.FC = () => {
                     </div>
                 ))}
             </div>
+            <p className="disclaimer">*Pricing is subject to change based on project scope and complexity.</p>
 
             <h3 className="pricing-category">Graphic Design</h3>
             <div className="pricing-grid">
@@ -40,6 +41,7 @@ const Pricing: React.FC = () => {
                     </div>
                 ))}
             </div>
+            <p className="disclaimer">*Pricing is subject to change based on project scope and complexity.</p>
         </section>
     );
 };
