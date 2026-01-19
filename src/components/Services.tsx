@@ -50,10 +50,10 @@ const Services: React.FC = () => {
                     <p>I offer tailored web development consulting for professionals and small businesses, creating responsive, user-friendly websites with clean code, modern design, and intuitive navigation. My work incorporates on-page SEO best practices and custom automation tools to improve visibility and streamline operations. Every project is shaped through close collaboration to ensure it aligns with each client’s brand, goals, and industry.</p>
                     <p><em>Skills Include:</em></p>
                     <ul>
-                        <li>React JS</li>
+                        <li>React JavaScript</li>
                         <li>Wordpress</li>
                         <li>HTML & CSS</li>
-                        <li>Wix</li>
+                        <li>Tailwind & Bootstrap</li>
                         <li>Figma & Framer</li>
                     </ul>
                 </div>

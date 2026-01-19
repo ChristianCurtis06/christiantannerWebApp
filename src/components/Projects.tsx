@@ -46,7 +46,7 @@ const projects = [
 		img: "Tate_AV-Promo.png",
 		alt: "TateAVConsulting Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
-		skills: ["Squarespace", "SEO Optimization"],
+		skills: ["Squarespace", "HTML & CSS", "SEO Optimization", "Adobe Illustrator"],
 		url: "https://tateavconsulting.com/"
 	},
 	{
@@ -54,7 +54,7 @@ const projects = [
 		img: "THoR_Works-Promo.png",
 		alt: "ThorWorks Favicon",
 		desc: "I created the website and favicon for the lead generation website RooferJacksonvilleFl.net.",
-		skills: ["Wix", "SEO Optimization"],
+		skills: ["Wix", "SEO Optimization", "Adobe Illustrator"],
 		url: "https://thorworks.online/"
 	},
 	{
