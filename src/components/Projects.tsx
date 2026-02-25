@@ -133,7 +133,7 @@ const Projects: React.FC = () => {
 						/>
 						<div className="content-flex-content">
 							<h3 className="content-flex-header">{project.title}</h3>
-							<p>{project.desc}</p>
+							{/* <p>{project.desc}</p> */}
 							<em>
 								<p>Skills Used:</p>
 								<ul>

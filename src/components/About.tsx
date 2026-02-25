@@ -48,7 +48,7 @@ const About: React.FC = () => {
                     id="background-about-me"
                     >
                     <h3 className="card-header">Background</h3>
-                    <p>I grew up in southern California but now reside in the DFW area of northern Texas. Although I am a recent High School graduate, I have worked in various fields and industries both during my high school years and since earning my diploma.</p>
+                    <p>As an entrepreneur at heart, I have a passion for helping small businesses thrive in an age of technological advancement. By offering creative solutions and strategic guidance, I help businesses establish a strong online presence and achieve their goals.</p>
                 </div>
 
                 <div
