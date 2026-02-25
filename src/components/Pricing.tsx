@@ -1,7 +1,9 @@
 import React, { useContext } from "react";
 import ServicesContext from "../context/ServicesContext";
+import { useNavigate } from "react-router-dom";
 
 const Pricing: React.FC = () => {
+    const navigate = useNavigate();
 
     const { services } = useContext(ServicesContext);
     const { webDevelopmentTiers, graphicDesignTiers } = services;
@@ -37,7 +39,7 @@ const Pricing: React.FC = () => {
                             <li key={i}>✓ {feature}</li>
                         ))}
                         </ul>
-                        <button className="cta-button" onClick={() => window.location.href = "/contact"}>{tier.ctaText}</button>
+                        <button className="cta-button" onClick={() => navigate("/contact")}>{tier.ctaText}</button>
                     </div>
                 ))}
             </div>
