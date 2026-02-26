@@ -66,9 +66,9 @@ const ContactForm: React.FC = () => {
                     <div className="contact-col" id="contact-info">
                         <h2 className="section-header" id="contact-me-header">Contact Me</h2>
                         <p>Email: <a href="mailto:hello@christiantanner.com">Hello@christiantanner.com</a></p>
-                        <p>Instagram: <a href="https://www.instagram.com/christiantannerdev/">My Profile</a></p>
-                        <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-curtis-113436326/">My Profile</a></p>
-                        <p>GitHub: <a href="https://github.com/ChristianCurtis06">My Portfolio</a></p>
+                        <p>Instagram: <a href="https://www.instagram.com/christiantannerdev/">Follow me</a></p>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/christian-curtis-113436326/">Connect with me</a></p>
+                        <p>GitHub: <a href="https://github.com/ChristianCurtis06">Look at my portfolio</a></p>
                     </div>
 
                     <div className="contact-col" id="contact-form">
