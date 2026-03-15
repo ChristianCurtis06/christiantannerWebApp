@@ -236,7 +236,7 @@ menu, footer {
     margin-top: 0;
     background: url("/ChristianCurtis-Headshot-grayscale.jpg");
     background-position: left top;
-    background-size: 125%;
+    background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
